@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: $direction;
 }
+//Bakgrunds bild
 @mixin background-picture ($picture, $height){
   background-image: url($picture);
   background-size: cover;
@@ -29,8 +30,18 @@
  }
 }
 
-@mixin our-packages-link-card {
-  background: $secondaryBg;
+//Våra paket-kort som är en länk
+// .my-box {
+//   @include our-packages-link-card($secondaryBg); // Med bakgrundsfärg
+// }
+// .my-box-with-image {
+//   @include our-packages-link-card(url('/path/to/image.jpg')); // Med bakgrundsbild
+// }
+@mixin our-packages-link-card ($background) {
+  background: $background;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: fit-content;
   text-align: center;
   padding: 20px;
   a {
@@ -39,8 +50,7 @@
   }
   // h2 {
   //   font-size: 1.5rem;
-  // }
-  
+  // }  
   p {
     margin: 0 3em;
   }
@@ -50,22 +60,18 @@
     justify-content: space-around;
     
     .img_circle {
-      // background-image: image();
       border-radius: 50%;
       width: 5rem;
       height: 5rem;
       margin: 10px;
       @include center(row);
       object-fit: contain;
-            
+
         & img {
-          border-radius: 50%; /* Gör bilden rund */
+          border-radius: 50%;
           max-width: 100%;
-          max-height: 100%;       
-          // object-fit: contain;  
-        }
-        
-      
+          max-height: 100%;      
+        }     
     }
   }
 }

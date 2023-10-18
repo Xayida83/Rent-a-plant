@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./mixins";
+
+.welcome_sign {
+  @include background-squere($highTransparencyBgDark);
+}
+.package_link_card {
+  @include our-packages-link-card;
+}
+  
+

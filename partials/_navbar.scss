@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./media-queries";
 
 %align-center {
   display: flex;
@@ -7,10 +8,60 @@
 
 .navbar {
   background: $footerColor;
-  height: 80px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 10;
   position: relative;
+
+&__logo {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 24px;
+  @extend %align-center;
+}
+
+&__bars{
+  opacity: 0;
+  
+  @include tablet {
+    color: $colorWhite;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+
+  
+&__menu {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+
+  @include tablet {
+    display: none;
+  }
+
+    &--links {
+      color: $colorWhite;
+      @extend %align-center; 
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+
+      &:hover {
+        color: $colorBeige;
+        transition: all 0.3s ease;
+      }
+    }
+   
+  }
 }

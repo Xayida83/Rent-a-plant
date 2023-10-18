@@ -1,0 +1,14 @@
+@import "./variables";
+@import "./mixins";
+
+.background_element {
+  @include background-picture('Images/primary_picture.jpg', 30vh); 
+}
+.welcome_sign {
+  @include background-squere($highTransparencyBgDark, $colorWhite);  
+}
+.package_link_card {
+  @include our-packages-link-card;
+}
+  
+

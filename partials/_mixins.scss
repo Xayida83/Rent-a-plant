@@ -1,0 +1,71 @@
+//Centrerat
+@mixin center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin background-picture ($picture, $height){
+  background-image: url($picture);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: $height; 
+  padding: 1em 0 1em 0;
+  @include center(column);
+}
+
+// Text låda
+@mixin background-squere($background-color, $text-color, $width) {
+ text-align: center;
+ background-color:$background-color;
+ max-width: $width;
+ max-height: fit-content;
+ padding: 1em;
+ border-radius: 20px; 
+ color: $text-color;
+ & h1 {
+  margin: 0;
+ }
+}
+
+@mixin our-packages-link-card {
+  background: $secondaryBg;
+  text-align: center;
+  padding: 20px;
+  a {
+    text-decoration: none;
+    color: $colorWhite;
+  }
+  // h2 {
+  //   font-size: 1.5rem;
+  // }
+  
+  p {
+    margin: 0 3em;
+  }
+  
+  .img_packages {
+    display: flex;
+    justify-content: space-around;
+    
+    .img_circle {
+      // background-image: image();
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      margin: 10px;
+      @include center(row);
+      object-fit: contain;
+            
+        & img {
+          border-radius: 50%; /* Gör bilden rund */
+          max-width: 100%;
+          max-height: 100%;       
+          // object-fit: contain;  
+        }
+        
+      
+    }
+  }
+}

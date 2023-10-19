@@ -1,0 +1,173 @@
+@import "./variables"; 
+@import "./footer"; 
+
+
+h1 {
+    text-align: center;
+    color: $colorBrown; 
+    font-family: "DM Serif Display";
+}
+
+/* BILD LÄNGST UPP PÅ SIDAN UNDER NAVBAR */ 
+
+
+.img_wrapper {
+    display: flex;
+    justify-content: center;
+
+    .our_packages {
+        width: 40em; 
+        min-width: 10em; 
+        height: auto; 
+        border-radius: 150px;
+    
+    }
+}
+
+
+/* PAKETEN - MOBILE FIRST */ 
+
+.packages_wrapper {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 3em; 
+
+    .packages_list {
+        background-color: $colorLightBeige;
+        width: 20em; 
+        height: 15em; 
+        border-radius: 50px;
+
+        /* DEKOR PÅ DIV */ 
+        .packages_top {
+            background-color: $colorBrown;
+            width: 15em; 
+            height: 0.75em;
+            border-radius: 50px 50px 0px 0px ;
+            padding: 40px; 
+
+        }
+    
+    }
+
+}
+
+/* LYXPAKETET */ 
+
+.packages_list_lux {
+    background-color: $colorBeige;
+    height: 20em; 
+    width: 20em; 
+    border-radius: 50px;
+
+    .packages_top {
+        background-color: $colorBrown;
+        width: 15em; 
+        height: 0.75em;
+        border-radius: 50px 50px 0px 0px ;
+        padding: 40px; 
+    }
+
+}
+
+
+    h2 {
+        text-align: center;
+        font-family: "DM Serif Display";
+        color: $colorWhite; 
+        font-size: 1.5em; 
+    
+}
+
+ul {
+    font-family: "poppins";
+    color: $primaryColor; 
+}
+
+.lux_package {
+    list-style-type: none;
+    color: $colorWhite; 
+    text-align: left;
+}
+
+input[type="checkbox"]::after {
+    accent-color: $primaryColor; 
+    margin-right: 100px;
+}
+
+.star_checkbox {
+    display: flex; 
+    justify-content: center;
+    margin-left: 30px;
+    background-color: $colorWhite;
+    border-radius: 30px;
+    padding: 10px; 
+    width: 10em; 
+    box-shadow: 2px 2px 2px $colorBrown;
+
+
+    .checked {
+        color: orange; 
+        text-align: center; 
+    }
+    
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: $colorBrown;
+    border-radius: 20px;
+    border: 1px solid $colorWhite;
+    text-align: center;
+    padding: 17px; 
+    font-family: "Poppins";
+    color: $colorWhite; 
+    font-size: 1.25em; 
+    font-weight: bold;
+    width: 10em; 
+
+
+}
+
+.invisible_button {
+    visibility: hidden;
+}
+
+/* DESKTOP MEDIA QUERIE */ 
+
+@media screen and (min-width: 810px) {
+
+    .packages_wrapper {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em; 
+
+        .invisible_button {
+            visibility: visible;
+        
+        
+        
+        }
+        
+        
+    }
+}
+
+/* BILD */ 
+
+.img_wrapper {
+    display: flex;
+    justify-content: center;
+
+    .our_packages {
+        max-width: 100%;  
+        height: auto; 
+    }
+}
+
+/* SKICKA OFFERT-KNAPP I VARJE DIV */

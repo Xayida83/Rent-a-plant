@@ -1,11 +1,82 @@
+@import "./variables"; 
+
+
 footer {
-    background-color: $colorGreen;
     font-family: "Poppins";
-    font-size: 16px;
+    font-size: 0.5em;
+    background-color: $primaryColor; 
+    color: $colorWhite; 
+    height: 100px; 
+    width: auto; 
     
     .footer_wrapper {
         display: flex; 
         flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; 
 
+        .logo_footer {
+            height: 100%;
+            width: auto; 
+            text-align: center;
+            display: relative;  
+
+                a {
+                color: $colorWhite; 
+                
+
+            }
+        }
+    }
+    
+}
+
+
+/* MENY MED LOGGA OVANFÖR */ 
+
+.menu_footer {
+    width: 300px; 
+    height: 120px; 
+    text-align: left;
+    margin-left: 0px; 
+
+    p {
+        color: $colorLightGreen;
+        font-weight: 200; 
+        display: inline; 
+    }
+
+    .copyright {
+        margin-left: 40px; 
+    }
+
+    a {
+        color: $colorWhite; 
+        
+    
     }
 }
+
+/* LOGGA */ 
+
+.footer_wrapper .menu_footer .logo_footer {
+    height: 40%; 
+    width: auto; 
+    margin-left: 30px; 
+}
+
+
+/* TEXTENS AVSTÅND TILL FOOTERN */ 
+
+.contact_footer {
+    text-align: right;
+    margin-right: 40px; 
+    margin-top: 30px; 
+}
+
+.adress_footer {
+    margin-left: 40px; 
+    margin-top: 20px; 
+}
+
+

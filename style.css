@@ -24,14 +24,14 @@
 .navbar__bars {
   opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
   .navbar__bars {
     color: #FEFAE0;
     opacity: 1;
     position: absolute;
     top: 22px;
     right: 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 .navbar__menu {
@@ -41,7 +41,7 @@
   text-align: center;
   margin-right: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
   .navbar__menu {
     display: none;
   }

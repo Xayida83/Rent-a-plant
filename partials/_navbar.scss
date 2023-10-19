@@ -20,7 +20,7 @@ body {
   background-color: $primaryColor;
   padding: 12px 20px;
 }
-.logo img {width: 100%;}
+.logo img {width: 230px;}
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
 .menu li a {
@@ -50,6 +50,8 @@ body {
   font-size: 2.5rem;
   display: none;
 }
+
+
 
 .menu li a:hover:after {width: 100%;}
 .close-menu {
@@ -91,3 +93,6 @@ body {
   .open-menu , .close-menu {display: block;}
   #check:checked ~ .menu {right: 0;}
 }
+
+
+

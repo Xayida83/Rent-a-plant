@@ -2,11 +2,11 @@
 @import "./mixins";
 
 .background_element {
-  @include background-picture('Images/primary_picture.jpg', 30vh); 
+  @include background-picture('Images/primary_picture.jpg', 49vh); 
 }
 .welcome_sign {
   @include background-squere($highTransparencyBgDark, $colorWhite, 80%);  
 }
-.package_link_card {
-  @include our-packages-link-card;
+.package_link_card{
+  @include our-packages-link-card($secondaryBg);
 }

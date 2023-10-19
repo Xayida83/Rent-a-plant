@@ -29,7 +29,7 @@
   margin: 0;
  }
 }
-
+$desktop: "screen and (min-width: 1000px)";
 //Våra paket-kort som är en länk
 // .my-box {
 //   @include our-packages-link-card($secondaryBg); // Med bakgrundsfärg
@@ -41,7 +41,6 @@
   background: $background;
   background-size: cover;
   background-repeat: no-repeat;
-  width: fit-content;
   text-align: center;
   padding: 20px;
   a {
@@ -65,10 +64,15 @@
       height: 5rem;
       margin: 10px;
       @include center(row);
-      object-fit: contain;
+      // object-fit: contain;
 
+      @media #{$desktop} {
+        width: 15rem;
+        height: 15rem;
+      }
         & img {
           border-radius: 50%;
+          object-fit: contain;
           max-width: 100%;
           max-height: 100%;      
         }     

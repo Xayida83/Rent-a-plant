@@ -1,9 +1,36 @@
-.navbar {
-  background: green;
-  height: 80px;
+@import "./variables";
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+.nav-bar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1200px) / 2);
-  z-index: 10;
+  align-items: flex-end;
+  list-style: none;
   position: relative;
+  background-color: $primaryColor;
+  padding: 12px 20px;
+}
+.logo img {width: 100%;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: $colorWhite;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+
+
+  
 }

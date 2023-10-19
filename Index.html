@@ -12,20 +12,23 @@
 
 <body>
     <!-- Navbar Section -->
-    <nav class="navbar">
-      <a href="Index.html" class="navbar__logo">
-        <img src="Images/logo2.svg" alt="Rent-a-Plant Logo">
-      </a>
+    <nav>
+      <ul class='nav-bar'>
+          <li class='logo'><a href='#'><img src='Images/logo2.svg'/></a></li>
+          <input type='checkbox' id='check' />
+          <span class="menu">
+              <li><a href="">Hem</a></li>
+              <li><a href="">Våra Paket</a></li>
+              <li><a href="">Om Oss</a></li>
+              <li><a href="">Referenser</a></li>
+              <li><a href="">Kontakt</a></li>
+              <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+  </nav>
+
     
-      <div class="navbar__bars"><i class="fa-solid fa-bars"></i></div>
-      <div class="navbar__menu">
-        <a href="/" class="navbar__menu--links">Hem</a>
-        <a href="/" class="navbar__menu--links">Våra Paket</a>
-        <a href="/" class="navbar__menu--links">Om Oss</a>
-        <a href="/" class="navbar__menu--links">Referenser</a>
-        <a href="/" class="navbar__menu--links">Kontakt</a>
-      </div>
-    </nav>
   <header>
     <div class="background_element">
     <div class="welcome_sign">

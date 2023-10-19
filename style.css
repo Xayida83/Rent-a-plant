@@ -9,6 +9,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -354,7 +356,11 @@ button {
   color: #FEFAE0;
 }
 .welcome_sign h1 {
-  margin: 0;
+  margin: 1em 0;
+  color: #FEFAE0;
+}
+.welcome_sign p {
+  text-align: left;
 }
 
 .package_link_card {
@@ -395,11 +401,51 @@ button {
   border-radius: 50%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-.package_link_card .img_packages .img_circle img {
-  border-radius: 50%; /* Gör bilden rund */
-  -o-object-fit: contain;
-     object-fit: contain;
   max-width: 100%;
   max-height: 100%;
+}
+
+.background_element {
+  background-image: url("Images/primary_picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 97vh;
+  padding: 1em 0 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.why_us_sign {
+  text-align: center;
+  background-color: #FEFAE0;
+  max-width: 80%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 1em;
+  border-radius: 20px;
+  color: #45462A;
+}
+.why_us_sign h1 {
+  margin: 1em 0;
+  color: #45462A;
+}
+.why_us_sign p {
+  text-align: left;
+}
+.why_us_sign .special-text {
+  margin: 1.5em 0;
+  position: relative;
+}
+.why_us_sign .special-text::before {
+  content: attr(data-text); /* Hämta texten från "data-text" attributet */
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.why_us_sign .special-text .special-text::before {
+  content: attr(data-text);
 }/*# sourceMappingURL=style.css.map */

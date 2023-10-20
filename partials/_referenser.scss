@@ -1,8 +1,8 @@
 @import "./variables";
 @import"./mixins";
 
-.background_element {
-  @include background-picture('Images/primary_picture.jpg', 97vh);
+.background_picture {
+  @include background-picture('Images/package_3.jpg');
 }
 .why_us_sign {
   @include background-square($primaryBg, $primaryColor, 80%);

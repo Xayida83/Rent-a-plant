@@ -22,13 +22,7 @@
     }
    }
 }
-// .logo_picture {
-//   max-width: 17,75em;
-//   max-height: 17em;
-//   background-color: rgba($color: $primaryColor, $alpha: 0.7);
-//   border-radius: 1.5em;
-//   @include switch-background-image($mobileImage, $desktopImage);
-// }
+
 .logo_picture {
   width: 18rem;
   height: 16rem;
@@ -40,7 +34,7 @@
   }
 }
 .contact-button{
-  @include primary-button;
+  @include button($primaryButtonColor, $primaryButtonBorderColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
 }
 
 .reference {

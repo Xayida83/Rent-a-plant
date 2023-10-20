@@ -346,6 +346,10 @@ input[type=checkbox]::after {
 }
 
 .welcome_sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   background-color: rgba(69, 70, 42, 0.8);
   max-width: -moz-fit-content;
@@ -431,6 +435,10 @@ input[type=checkbox]::after {
 }
 
 .why_us_sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   background-color: rgba(254, 250, 225, 0.8);
   max-width: -moz-fit-content;
@@ -488,6 +496,7 @@ input[type=checkbox]::after {
 }
 
 .contact-button {
+  width: 17em;
   background-color: #45462A;
   border: solid #FEFAE0 1px;
   border-radius: 1em;

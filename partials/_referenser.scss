@@ -8,7 +8,7 @@
 .why_us_sign {
   @include background-square($highTransparencyBgLight, $primaryColor);
   & .special-text  {
-    margin: 1.5em 0;
+    // margin: 1.5em 0;
     position: relative;
     &::before {
       content: attr(data-text); /* Hämta texten från "data-text" attributet */

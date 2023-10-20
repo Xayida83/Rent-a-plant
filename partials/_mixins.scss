@@ -18,7 +18,8 @@
 
 // Text låda
 @mixin background-square($background-color, $text-color) {
-  @include center(column);  
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color:$background-color;
   max-width: fit-content;
@@ -36,6 +37,11 @@
   } 
   & p{
     text-align: left;
+    line-height: 2em;
+    margin: 0.5em 1em;
+  }
+  & a {
+    align-self: center;
   }
 }
 
@@ -62,7 +68,7 @@
   
   .img_packages {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
     .img_circle {
       border-radius: 50%;
@@ -95,6 +101,7 @@
     background-color: $bg-color;
     border: solid $border-color 1px;
     border-radius: 1em;
+    margin: 1em;
     text-decoration: none;
     color: $text-color;
     font-weight: 700;

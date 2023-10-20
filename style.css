@@ -347,8 +347,6 @@ input[type=checkbox]::after {
 
 .welcome_sign {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
   background-color: rgba(69, 70, 42, 0.8);
@@ -372,6 +370,11 @@ input[type=checkbox]::after {
 }
 .welcome_sign p {
   text-align: left;
+  line-height: 2em;
+  margin: 0.5em 1em;
+}
+.welcome_sign a {
+  align-self: center;
 }
 
 .package_link_card {
@@ -390,7 +393,7 @@ input[type=checkbox]::after {
 }
 .package_link_card .img_packages {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .package_link_card .img_packages .img_circle {
   border-radius: 50%;
@@ -436,8 +439,6 @@ input[type=checkbox]::after {
 
 .why_us_sign {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
   background-color: rgba(254, 250, 225, 0.8);
@@ -461,9 +462,13 @@ input[type=checkbox]::after {
 }
 .why_us_sign p {
   text-align: left;
+  line-height: 2em;
+  margin: 0.5em 1em;
+}
+.why_us_sign a {
+  align-self: center;
 }
 .why_us_sign .special-text {
-  margin: 1.5em 0;
   position: relative;
 }
 .why_us_sign .special-text::before {
@@ -500,6 +505,7 @@ input[type=checkbox]::after {
   background-color: #45462A;
   border: solid #FEFAE0 1px;
   border-radius: 1em;
+  margin: 1em;
   text-decoration: none;
   color: #FEFAE0;
   font-weight: 700;

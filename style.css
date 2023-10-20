@@ -471,10 +471,21 @@ button {
 }
 
 .logo_picture {
-  max-width: 17, 75em;
-  max-height: 17em;
-  background-color: rgba(69, 70, 42, 0.7);
-  border-radius: 1.5em;
+  width: 18rem;
+  height: 16rem;
+  background-image: url("Images/light-flower.png");
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .logo_picture {
+    background-image: url("Images/light-logo.png");
+  }
+}
+@media (screen and (min-width: 1000px)) {
+  .logo_picture {
+    width: 23rem;
+    height: 17rem;
+  }
 }
 
 .reference {

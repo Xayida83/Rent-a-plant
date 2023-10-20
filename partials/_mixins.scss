@@ -88,3 +88,12 @@
     }
   }
 }
+
+//Ändra logga beroende på skärm
+@mixin switch-background-image($mobile-image, $desktop-image) {
+  background-image: url('#{$mobile-image}'); // Använd mobilbilden som standard
+
+  @media (min-width: 768px) {
+    background-image: url('#{$desktop-image}'); // Använd desktopbilden när skärmbredden är minst 768px
+  }
+}

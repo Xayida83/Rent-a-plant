@@ -22,11 +22,22 @@
     }
    }
 }
+// .logo_picture {
+//   max-width: 17,75em;
+//   max-height: 17em;
+//   background-color: rgba($color: $primaryColor, $alpha: 0.7);
+//   border-radius: 1.5em;
+//   @include switch-background-image($mobileImage, $desktopImage);
+// }
 .logo_picture {
-  max-width: 17,75em;
-  max-height: 17em;
-  background-color: rgba($color: $primaryColor, $alpha: 0.7);
-  border-radius: 1.5em;
+  width: 18rem;
+  height: 16rem;
+  @include switch-background-image($mobileImage, $desktopImage);
+  background-size: cover;
+  @media ($desktop){
+    width: 23rem;
+    height: 17rem;
+  }
 }
 
 

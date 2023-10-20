@@ -22,8 +22,9 @@
     }
    }
 }
-
 .logo_picture {
+  background-color: $highTransparencyBgDark;
+  border-radius: 1.5em;
   width: 18rem;
   height: 16rem;
   @include switch-background-image($mobileImage, $desktopImage);

@@ -45,8 +45,8 @@
   gap: 2em;
   @media #{$desktop}{
     flex-flow: row wrap;
-    justify-content: space-between;
-    max-width: 60%;
+    justify-content: space-evenly;
+    max-width: 106vh;
   }
 
   .quote-wrapper {

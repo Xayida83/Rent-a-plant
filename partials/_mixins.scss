@@ -17,12 +17,13 @@
 }
 
 // Text låda
-@mixin background-square($background-color, $text-color, $width) {
+@mixin background-square($background-color, $text-color) {
  text-align: center;
  background-color:$background-color;
- max-width: $width;
+ max-width: fit-content;
  max-height: fit-content;
  padding: 1em;
+ margin: 1em;
  border-radius: 20px; 
  color: $text-color;
  & h1 {
@@ -48,16 +49,13 @@ $desktop: "screen and (min-width: 1000px)";
   background-repeat: no-repeat;
   text-align: center;
   padding: 20px;
-  a {
-    text-decoration: none;
-    color: $colorWhite;
-  }
-  // h2 {
-  //   font-size: 1.5rem;
-  // }  
-  p {
-    margin: 0 3em;
-  }
+    a {
+      text-decoration: none;
+      color: $colorWhite;
+    }
+    p {
+      margin: 0 3em;
+    }
   
   .img_packages {
     display: flex;
@@ -67,20 +65,25 @@ $desktop: "screen and (min-width: 1000px)";
       border-radius: 50%;
       width: 5rem;
       height: 5rem;
-      margin: 10px;
+      margin: 10px;      
       @include center(row);
-      // object-fit: contain;
+        &#circle_one{
+          background:  url('Images/package_1.jpg');
+          background-size: cover;          
+        }
+        &#circle_two{
+          background:  url('Images/package_2.jpg');
+          background-size: cover; 
+        }
+        &#circle_three{
+          background:  url('Images/package_3.jpg');
+          background-size: cover; 
+        }
 
       @media #{$desktop} {
         width: 15rem;
         height: 15rem;
-      }
-        & img {
-          border-radius: 50%;
-          object-fit: contain;
-          max-width: 100%;
-          max-height: 100%;      
-        }     
+      }     
     }
   }
 }

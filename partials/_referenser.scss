@@ -5,7 +5,7 @@
   @include background-picture('Images/package_3.jpg');
 }
 .why_us_sign {
-  @include background-square($primaryBg, $primaryColor, 80%);
+  @include background-square($primaryBg, $primaryColor);
   & .special-text  {
     margin: 1.5em 0;
     position: relative;

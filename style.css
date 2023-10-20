@@ -349,10 +349,12 @@ button {
 .welcome_sign {
   text-align: center;
   background-color: rgba(69, 70, 42, 0.8);
-  max-width: 80%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
   padding: 1em;
+  margin: 1em;
   border-radius: 20px;
   color: #FEFAE0;
 }
@@ -393,18 +395,23 @@ button {
   align-items: center;
   flex-direction: row;
 }
+.package_link_card .img_packages .img_circle#circle_one {
+  background: url("Images/package_1.jpg");
+  background-size: cover;
+}
+.package_link_card .img_packages .img_circle#circle_two {
+  background: url("Images/package_2.jpg");
+  background-size: cover;
+}
+.package_link_card .img_packages .img_circle#circle_three {
+  background: url("Images/package_3.jpg");
+  background-size: cover;
+}
 @media screen and (min-width: 1000px) {
   .package_link_card .img_packages .img_circle {
     width: 15rem;
     height: 15rem;
   }
-}
-.package_link_card .img_packages .img_circle img {
-  border-radius: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .background_picture {
@@ -424,10 +431,12 @@ button {
 .why_us_sign {
   text-align: center;
   background-color: #FEFAE0;
-  max-width: 80%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
   padding: 1em;
+  margin: 1em;
   border-radius: 20px;
   color: #45462A;
 }

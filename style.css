@@ -470,6 +470,8 @@ input[type=checkbox]::after {
 }
 
 .logo_picture {
+  background-color: rgba(69, 70, 42, 0.8);
+  border-radius: 1.5em;
   width: 18rem;
   height: 16rem;
   background-image: url("Images/light-flower.png");

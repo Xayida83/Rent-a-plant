@@ -461,4 +461,10 @@ button {
 }
 .why_us_sign .special-text .special-text::before {
   content: attr(data-text);
+}
+
+.logo_picture {
+  max-width: 17, 75em;
+  max-height: 17em;
+  background-color: rgba(69, 70, 42, 0.7);
 }/*# sourceMappingURL=style.css.map */

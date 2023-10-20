@@ -291,8 +291,7 @@ input[type=checkbox]::after {
   display: flex;
   justify-content: center;
 }
-
-button {
+.button_wrapper button {
   background-color: #BC6C25;
   border-radius: 20px;
   border: 1px solid #FEFAE0;
@@ -486,6 +485,21 @@ button {
     width: 23rem;
     height: 17rem;
   }
+}
+
+.contact-button {
+  background-color: #45462A;
+  border: solid #FEFAE0 1px;
+  border-radius: 1em;
+  text-decoration: none;
+  color: #FEFAE0;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Poppins";
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact-button:hover {
+  background-color: #606C38;
 }
 
 .reference {

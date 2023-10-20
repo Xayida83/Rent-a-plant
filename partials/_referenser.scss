@@ -39,7 +39,9 @@
     height: 17rem;
   }
 }
-
+.contact-button{
+  @include primary-button;
+}
 
 .reference {
   padding: 2em;

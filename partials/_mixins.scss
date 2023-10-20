@@ -88,6 +88,23 @@
     }
   }
 }
+// Knappar 
+@mixin primary-button {
+    background-color: $primaryButtonColor;
+    border: solid $primaryButtonBorderColor 1px;
+    border-radius: 1em;
+    text-decoration: none;
+    color: $colorWhite;
+    font-weight: 700;
+    padding: 1em;
+    font-family: "Poppins";
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+      background-color: $primaryButtonHoverColor;
+    }
+}
+
+
 
 //Ändra logga beroende på skärm
 @mixin switch-background-image($mobile-image, $desktop-image) {

@@ -117,22 +117,20 @@ input[type="checkbox"]::after {
 .button_wrapper {
     display: flex;
     justify-content: center;
+
+    button {
+        background-color: $colorBrown;
+        border-radius: 20px;
+        border: 1px solid $colorWhite;
+        text-align: center;
+        padding: 17px; 
+        font-family: "Poppins";
+        color: $colorWhite; 
+        font-size: 1.25em; 
+        font-weight: bold;
+        width: 10em; 
+    }
 }
-button {
-    background-color: $colorBrown;
-    border-radius: 20px;
-    border: 1px solid $colorWhite;
-    text-align: center;
-    padding: 17px; 
-    font-family: "Poppins";
-    color: $colorWhite; 
-    font-size: 1.25em; 
-    font-weight: bold;
-    width: 10em; 
-
-
-}
-
 .invisible_button {
     visibility: hidden;
 }

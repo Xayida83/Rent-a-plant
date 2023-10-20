@@ -2,7 +2,7 @@
 @import"./mixins";
 
 .background_picture {
-  @include background-picture('Images/package_3.jpg');
+  @include background-picture('Images/bg_picture.jpg');
 }
 .why_us_sign {
   @include background-square($primaryBg, $primaryColor);

@@ -415,7 +415,7 @@ button {
 }
 
 .background_picture {
-  background-image: url("Images/package_3.jpg");
+  background-image: url("Images/bg_picture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;

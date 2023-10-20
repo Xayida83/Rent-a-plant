@@ -4,8 +4,9 @@
 .background_picture {
   @include background-picture('Images/bg_picture.jpg');
 }
+
 .why_us_sign {
-  @include background-square($primaryBg, $primaryColor);
+  @include background-square($highTransparencyBgLight, $primaryColor);
   & .special-text  {
     margin: 1.5em 0;
     position: relative;
@@ -27,3 +28,121 @@
   background-color: rgba($color: $primaryColor, $alpha: 0.7);
   border-radius: 1.5em;
 }
+
+
+.reference {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  @media #{$desktop}{
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 60%;
+  }
+
+  .quote-wrapper {
+    width: 16em;
+    height: 16em;
+    position: relative;
+
+    .text {
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(97, 109, 59, 1) 0%,
+        rgba(69, 70, 42, 1) 70%,
+        rgba(252, 253, 253, 0) 70.3%
+      );
+      position: relative;
+      margin: 0;
+      color: $colorWhite;
+
+      p {
+        height: 100%;
+        font-size: 17px;
+        line-height: 1.25;
+        text-align: center;
+        font-style: italic;
+        text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+      }
+
+      &::before {
+        content: "";
+        width: 50%;
+        height: 100%;
+        float: left;
+        shape-outside: polygon(
+          0 0,
+          98% 0,
+          50% 6%,
+          23.4% 17.3%,
+          6% 32.6%,
+          0 50%,
+          6% 65.6%,
+          23.4% 82.7%,
+          50% 94%,
+          98% 100%,
+          0 100%
+        );
+        shape-margin: 7%;
+      }
+
+      p::before {
+        content: "";
+        width: 50%;
+        height: 100%;
+        float: right;
+        shape-outside: polygon(
+          2% 0%,
+          100% 0%,
+          100% 100%,
+          2% 100%,
+          50% 94%,
+          76.6% 82.7%,
+          94% 65.6%,
+          100% 50%,
+          94% 32.6%,
+          76.6% 17.3%,
+          50% 6%
+        );
+        shape-margin: 7%;
+      }
+    }
+
+    blockquote span {
+      width: 100%;
+      position: absolute;
+      bottom: 2em;
+      right: -2em;
+      font-size: 17px;
+      text-align: center;
+      font-style: italic;
+      text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    &::before {
+      content: "\201C";
+      font-size: 13em;
+      position: absolute;
+      top: -48px;
+      left: 0;
+      z-index: 1;
+      font-family: sans-serif, serif;
+      color: rgba($color: $colorWhite, $alpha: 0.9);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

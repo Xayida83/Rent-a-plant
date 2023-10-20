@@ -11,8 +11,7 @@
     position: relative;
     &::before {
       content: attr(data-text); /* Hämta texten från "data-text" attributet */
-      font-weight: bold;
-      // color: #000; /* Anpassa textfärgen efter behov */
+      font-weight: bold;  
       position: absolute;
       top: 0;
       left: 0;

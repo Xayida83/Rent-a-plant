@@ -355,7 +355,7 @@ button {
   max-height: fit-content;
   padding: 1em;
   margin: 1em;
-  border-radius: 20px;
+  border-radius: 1.5em;
   color: #FEFAE0;
 }
 .welcome_sign h1 {
@@ -372,7 +372,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 20px;
+  padding: 2em;
 }
 .package_link_card a {
   text-decoration: none;
@@ -389,7 +389,7 @@ button {
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
-  margin: 10px;
+  margin: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,7 +437,7 @@ button {
   max-height: fit-content;
   padding: 1em;
   margin: 1em;
-  border-radius: 20px;
+  border-radius: 1.5em;
   color: #45462A;
 }
 .why_us_sign h1 {
@@ -467,4 +467,5 @@ button {
   max-width: 17, 75em;
   max-height: 17em;
   background-color: rgba(69, 70, 42, 0.7);
+  border-radius: 1.5em;
 }/*# sourceMappingURL=style.css.map */

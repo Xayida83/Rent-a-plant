@@ -10,6 +10,10 @@ $headingText: 62px;
 $bodyText: 32px; 
 
 
+// Loggor
+$mobileImage: "Images/light-flower.png";
+$desktopImage: "Images/light-logo.png";
+
 
 //-------- FÄRGVARIABLER --------------
 
@@ -21,11 +25,16 @@ $colorWhite: #FEFAE0;
 $primaryBg: #FEFAE0; 
 $secondaryBg: #BC6C25; 
 $highTransparencyBgDark: rgba(69, 70, 42, 0.8);
+$highTransparencyBgLight: rgba(254, 250, 225, 0.8);
+
 
 
 // Knappar 
-$primaryButtonColor: #45462A; 
+$primaryButtonColor: #45462A;
+$primaryButtonBorderColor:#FEFAE0;
+$primaryButtonHoverColor:#606C38;
 $secondaryButtonColor: #BC6C25; 
+$buttonText: "Poppins";
 
 // Färger - sekundära
 $colorBrown: #BC6C25; 
@@ -42,4 +51,7 @@ $footerText: #FEFAE0;
 // Header
 $headerColor: #45462A;
 $headerText:  #FEFAE0; 
+
+// Media query
+$desktop: "screen and (min-width: 1000px)";
 

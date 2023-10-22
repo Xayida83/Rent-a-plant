@@ -35,7 +35,7 @@ body {
 }
 
 .logo img {
-  width: 100%;
+  width: 230px;
 }
 
 .menu {
@@ -292,8 +292,7 @@ ul {
   display: flex;
   justify-content: center;
 }
-
-button {
+.button_wrapper button {
   background-color: #BC6C25;
   border-radius: 20px;
   border: 1px solid #FEFAE0;
@@ -350,8 +349,9 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 30vh;
-  padding: 1em 0 1em 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2em 0 2em 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,55 +359,248 @@ button {
 }
 
 .welcome_sign {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: rgba(69, 70, 42, 0.8);
-  max-width: 80%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
   padding: 1em;
-  border-radius: 20px;
+  margin: 1em;
+  border-radius: 1.5em;
   color: #FEFAE0;
 }
+@media screen and (min-width: 1000px) {
+  .welcome_sign {
+    max-width: 70%;
+  }
+}
 .welcome_sign h1 {
-  margin: 0;
+  margin: 1em 0;
+  color: #FEFAE0;
+}
+.welcome_sign p {
+  text-align: left;
+  line-height: 2em;
+  margin: 0.5em 1em;
+}
+.welcome_sign a {
+  align-self: center;
 }
 
 .package_link_card {
   background: #BC6C25;
   background-size: cover;
   background-repeat: no-repeat;
-  width: -moz-fit-content;
-  width: fit-content;
   text-align: center;
-  padding: 20px;
+  padding: 2em;
 }
 .package_link_card a {
   text-decoration: none;
   color: #FEFAE0;
 }
 .package_link_card p {
-  margin: 0 3em;
+  margin: 1em 3em;
 }
 .package_link_card .img_packages {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .package_link_card .img_packages .img_circle {
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
-  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
-.package_link_card .img_packages .img_circle img {
-  border-radius: 50%;
-  max-width: 100%;
-  max-height: 100%;
+.package_link_card .img_packages .img_circle#circle_one {
+  background: url("Images/package_1.jpg");
+  background-size: cover;
+}
+.package_link_card .img_packages .img_circle#circle_two {
+  background: url("Images/package_2.jpg");
+  background-size: cover;
+}
+.package_link_card .img_packages .img_circle#circle_three {
+  background: url("Images/package_3.jpg");
+  background-size: cover;
+}
+@media screen and (min-width: 1000px) {
+  .package_link_card .img_packages .img_circle {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+.background_picture {
+  background-image: url("Images/bg_picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2em 0 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.why_us_sign {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(254, 250, 225, 0.8);
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1.5em;
+  color: #45462A;
+}
+@media screen and (min-width: 1000px) {
+  .why_us_sign {
+    max-width: 70%;
+  }
+}
+.why_us_sign h1 {
+  margin: 1em 0;
+  color: #45462A;
+}
+.why_us_sign p {
+  text-align: left;
+  line-height: 2em;
+  margin: 0.5em 1em;
+}
+.why_us_sign a {
+  align-self: center;
+}
+.why_us_sign .special-text {
+  position: relative;
+}
+.why_us_sign .special-text::before {
+  content: attr(data-text); /* Hämta texten från "data-text" attributet */
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.why_us_sign .special-text .special-text::before {
+  content: attr(data-text);
+}
+
+.logo_picture {
+  background-color: rgba(69, 70, 42, 0.8);
+  border-radius: 1.5em;
+  width: 18rem;
+  height: 16rem;
+  background-image: url("Images/light-flower.png");
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .logo_picture {
+    background-image: url("Images/light-logo.png");
+  }
+}
+@media screen and (min-width: 1000px) {
+  .logo_picture {
+    width: 23rem;
+    height: 17rem;
+  }
+}
+
+.contact-button {
+  width: 17em;
+  background-color: #45462A;
+  border: solid #FEFAE0 1px;
+  border-radius: 1em;
+  margin: 1em;
+  text-decoration: none;
+  color: #FEFAE0;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Poppins";
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact-button:hover {
+  background-color: #606C38;
+}
+
+.reference {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+@media screen and (min-width: 1000px) {
+  .reference {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-width: 106vh;
+  }
+}
+.reference .quote-wrapper {
+  width: 16em;
+  height: 16em;
+  position: relative;
+}
+.reference .quote-wrapper .text {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgb(97, 109, 59) 0%, rgb(69, 70, 42) 70%, rgba(252, 253, 253, 0) 70.3%);
+  position: relative;
+  margin: 0;
+  color: #FEFAE0;
+}
+.reference .quote-wrapper .text p {
+  height: 100%;
+  font-size: 17px;
+  line-height: 1.25;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+.reference .quote-wrapper .text::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(0 0, 98% 0, 50% 6%, 23.4% 17.3%, 6% 32.6%, 0 50%, 6% 65.6%, 23.4% 82.7%, 50% 94%, 98% 100%, 0 100%);
+  shape-margin: 7%;
+}
+.reference .quote-wrapper .text p::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: right;
+  shape-outside: polygon(2% 0%, 100% 0%, 100% 100%, 2% 100%, 50% 94%, 76.6% 82.7%, 94% 65.6%, 100% 50%, 94% 32.6%, 76.6% 17.3%, 50% 6%);
+  shape-margin: 7%;
+}
+.reference .quote-wrapper blockquote span {
+  width: 100%;
+  position: absolute;
+  bottom: 2em;
+  right: -2em;
+  font-size: 17px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+.reference .quote-wrapper::before {
+  content: "“";
+  font-size: 13em;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: rgba(254, 250, 224, 0.9);
 }
 
 footer {

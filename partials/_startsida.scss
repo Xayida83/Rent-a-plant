@@ -6,6 +6,14 @@
 }
 .welcome_sign {
   @include background-square($highTransparencyBgDark, $colorWhite);  
+  p:last-child {
+    display: none;
+  }
+  @media #{$desktop}{
+    p:last-child {
+      display: block;
+    }
+  }
 }
 .package_link_card{
   @include our-packages-link-card($secondaryBg);

@@ -13,6 +13,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -224,14 +226,14 @@ h1 {
 .packages_wrapper .packages_list {
   background-color: #EFDCAC;
   width: 20em;
-  height: 15em;
+  height: 12em;
   border-radius: 50px;
-  /* DEKOR PÅ DIV */
+  /* BRUNDEKOR PÅ DIV */
 }
 .packages_wrapper .packages_list .packages_top {
   background-color: #BC6C25;
-  width: 15em;
-  height: 0.75em;
+  width: 20em;
+  height: 0.5em;
   border-radius: 50px 50px 0px 0px;
   padding: 40px;
 }
@@ -245,8 +247,8 @@ h1 {
 }
 .packages_list_lux .packages_top {
   background-color: #BC6C25;
-  width: 15em;
-  height: 0.75em;
+  width: 20em;
+  height: 0.5em;
   border-radius: 50px 50px 0px 0px;
   padding: 40px;
 }
@@ -269,11 +271,10 @@ ul {
   text-align: left;
 }
 
-input[type=checkbox]::after {
-  accent-color: #45462A;
-  margin-right: 100px;
-}
-
+/* input[type="checkbox"]::after {
+    accent-color: $primaryColor; 
+    margin-right: 100px; 
+} */
 .star_checkbox {
   display: flex;
   justify-content: center;
@@ -298,7 +299,7 @@ input[type=checkbox]::after {
   border-radius: 20px;
   border: 1px solid #FEFAE0;
   text-align: center;
-  padding: 17px;
+  padding: 10px;
   font-family: "Poppins";
   color: #FEFAE0;
   font-size: 1.25em;
@@ -318,8 +319,20 @@ input[type=checkbox]::after {
     justify-content: center;
     gap: 3em;
   }
+  .packages_wrapper .packages_list {
+    background-color: #EFDCAC;
+    width: 20em;
+    height: 17em;
+    border-radius: 50px;
+  }
   .packages_wrapper .invisible_button {
     visibility: visible;
+  }
+}
+/* OFFERTKNAPP */
+@media screen and (min-width: 810px) {
+  .button_wrapper {
+    visibility: hidden;
   }
 }
 /* BILD */
@@ -505,7 +518,7 @@ input[type=checkbox]::after {
     background-image: url("Images/light-logo.png");
   }
 }
-@media (screen and (min-width: 1000px)) {
+@media screen and (min-width: 1000px) {
   .logo_picture {
     width: 23rem;
     height: 17rem;
@@ -598,6 +611,194 @@ input[type=checkbox]::after {
   z-index: 1;
   font-family: sans-serif, serif;
   color: rgba(254, 250, 224, 0.9);
+}
+
+footer {
+  font-family: "Poppins";
+  font-size: 0.5em;
+  background-color: #45462A;
+  color: #FEFAE0;
+  height: 100px;
+  width: auto;
+}
+footer .footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footer_wrapper .logo_footer {
+  height: 100%;
+  width: auto;
+  text-align: center;
+  display: relative;
+}
+footer .footer_wrapper .logo_footer a {
+  color: #FEFAE0;
+}
+
+/* MENY MED LOGGA OVANFÖR */
+.menu_footer {
+  width: 300px;
+  height: 120px;
+  text-align: left;
+  margin-left: 0px;
+}
+.menu_footer p {
+  color: #606C38;
+  font-weight: 200;
+  display: inline;
+}
+.menu_footer .copyright {
+  margin-left: 40px;
+}
+.menu_footer a {
+  color: #FEFAE0;
+}
+
+/* LOGGA */
+.footer_wrapper .menu_footer .logo_footer {
+  height: 40%;
+  width: auto;
+  margin-left: 30px;
+}
+
+/* TEXTENS AVSTÅND TILL FOOTERN */
+.contact_footer {
+  text-align: right;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.adress_footer {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.contact_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #BC6C25;
+}
+.contact_wrapper .contact_form_wrapper {
+  background-color: #BC6C25;
+  width: 50em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_wrapper .contact_form_wrapper h1 {
+  color: #FEFAE0;
+}
+
+/* BILD PÅ KONTAKTSIDAN - OFFICE BUILDING */
+img {
+  width: 20em;
+  height: auto;
+  border-radius: 200px;
+}
+
+/* KONTAKTINFORMATIONEN I MOBILVYN */
+.contact_us {
+  display: block;
+  font-family: "Poppins";
+  font-weight: lighter;
+  font-size: 0.75em;
+  color: #FEFAE0;
+}
+
+.contact_info {
+  font-family: "Poppins";
+  font-weight: lighter;
+  color: #FEFAE0;
+  font-size: 0.75em;
+}
+
+/* KONTAKTFORMULÄRET */
+.bubbles_form_wrapper {
+  background-color: #EFDCAC;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  padding: 3em;
+}
+.bubbles_form_wrapper input {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #FEFAE0;
+  padding: 1.25em;
+  border: none;
+  font-family: "Poppins";
+}
+
+/* KONTAKTANLEDNING - DROPDOWN */
+#contact_reason {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #FEFAE0;
+  padding: 1.25em;
+  border: none;
+  font-family: "Poppins";
+}
+
+/* FRITEXTFÄLT */
+textarea {
+  border-radius: 20px;
+  background-color: #FEFAE0;
+  padding: 1.25em;
+  border: none;
+  font-family: "Poppins";
+}
+
+@media screen and (min-width: 810px) {
+  .contact_us, .contact_info {
+    visibility: hidden;
+  }
+}
+/* MEDIA QUERIE - DEKSTOP - FORMULÄRET */
+@media screen and (min-width: 810px) {
+  .bubbles_form_wrapper {
+    width: 70em;
+    height: 45em;
+  }
+  .bubbles_form_wrapper textarea {
+    height: 20em;
+  }
+}
+@media screen and (min-width: 810px) {
+  .contact_wrapper {
+    flex-direction: row;
+    background-color: #BC6C25;
+    justify-content: flex-start;
+  }
+}
+/* MEDIA QUERIE DESKTOP - OFFICE BUILDING */
+@media screen and (min-width: 810px) {
+  .image_wrapper {
+    display: flex;
+    justify-content: baseline;
+    width: 30em;
+  }
+  .office_building {
+    width: 30em;
+    height: auto;
+    border-radius: 0px;
+    margin: 0px;
+  }
+}
+/* MEDIA QUERIE - DESKTOP - KONTAKTFORMULÄR */
+@media screen and (min-width: 810px) {
+  .contact_form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .background_about_us {

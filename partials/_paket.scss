@@ -36,14 +36,15 @@ h1 {
     .packages_list {
         background-color: $colorLightBeige;
         width: 20em; 
-        height: 15em; 
+        height: 12em; 
         border-radius: 50px;
 
-        /* DEKOR PÅ DIV */ 
+        /* BRUNDEKOR PÅ DIV */ 
+
         .packages_top {
             background-color: $colorBrown;
-            width: 15em; 
-            height: 0.75em;
+            width: 20em; 
+            height: 0.5em;
             border-radius: 50px 50px 0px 0px ;
             padding: 40px; 
 
@@ -63,8 +64,8 @@ h1 {
 
     .packages_top {
         background-color: $colorBrown;
-        width: 15em; 
-        height: 0.75em;
+        width: 20em; 
+        height: 0.5em;
         border-radius: 50px 50px 0px 0px ;
         padding: 40px; 
     }
@@ -91,10 +92,10 @@ ul {
     text-align: left;
 }
 
-input[type="checkbox"]::after {
+/* input[type="checkbox"]::after {
     accent-color: $primaryColor; 
-    margin-right: 100px;
-}
+    margin-right: 100px; 
+} */ 
 
 .star_checkbox {
     display: flex; 
@@ -144,16 +145,31 @@ input[type="checkbox"]::after {
         flex-direction: row;
         justify-content: center;
         gap: 3em; 
-
+        .packages_list {
+            background-color: $colorLightBeige;
+            width: 20em; 
+            height: 17em; 
+            border-radius: 50px;
+            } 
+        
         .invisible_button {
             visibility: visible;
-        
-        
-        
+
         }
         
-        
     }
+}
+
+
+
+/* OFFERTKNAPP */ 
+
+@media screen and (min-width: 810px) {
+    .button_wrapper {
+        visibility: hidden;
+    }
+
+    
 }
 
 /* BILD */ 

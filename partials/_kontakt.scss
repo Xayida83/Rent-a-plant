@@ -1,0 +1,171 @@
+@import "./variables"; 
+@import "./footer"; 
+
+
+
+.contact_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colorBrown;
+
+    .contact_form_wrapper {
+        background-color: $colorBrown;
+        width: 50em; 
+        height: 100%; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            color: $colorWhite; 
+
+        }
+    }
+
+}
+
+
+/* BILD PÅ KONTAKTSIDAN - OFFICE BUILDING */ 
+
+img {
+    width: 20em; 
+    height: auto;
+    border-radius: 200px;
+
+}
+
+/* KONTAKTINFORMATIONEN I MOBILVYN */ 
+
+.contact_us {
+    display: block; 
+    font-family: "Poppins";
+    font-weight: lighter;
+    font-size: 0.75em;
+    color: $colorWhite; 
+
+}
+
+.contact_info {
+    font-family: "Poppins";
+    font-weight: lighter;
+    color: $colorWhite; 
+    font-size: 0.75em;
+}
+
+/* KONTAKTFORMULÄRET */ 
+
+.bubbles_form_wrapper {
+    background-color: $colorLightBeige;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 3em; 
+
+    input {
+        width: 100%;
+        border-radius: 20px;
+        background-color: $colorWhite; 
+        padding: 1.25em; 
+        border: none; 
+        font-family: "Poppins";
+
+    }
+}
+
+/* KONTAKTANLEDNING - DROPDOWN */ 
+
+#contact_reason {
+    width: 100%; 
+    border-radius: 20px;
+    background-color: $colorWhite;
+    padding: 1.25em; 
+    border: none; 
+    font-family: "Poppins";
+
+}
+
+/* FRITEXTFÄLT */ 
+
+textarea {
+    border-radius: 20px;
+    background-color: $colorWhite;
+    padding: 1.25em; 
+    border: none; 
+    font-family: "Poppins";
+}
+
+
+
+@media screen and (min-width: 810px) {
+
+    .contact_us, .contact_info {
+        visibility: hidden;
+    }
+
+    
+}
+
+/* MEDIA QUERIE - DEKSTOP - FORMULÄRET */ 
+
+@media screen and (min-width: 810px) {
+    .bubbles_form_wrapper {
+        width: 70em; 
+        height: 45em; 
+
+        textarea {
+            height: 20em; 
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 810px) {
+
+.contact_wrapper {
+    flex-direction: row;
+    background-color: $colorBrown;
+    justify-content:flex-start; 
+    }   
+}
+
+/* MEDIA QUERIE DESKTOP - OFFICE BUILDING */ 
+
+@media screen and (min-width: 810px) {
+    
+.image_wrapper {
+    display: flex;
+    justify-content: baseline;
+    width: 30em; 
+
+}
+    
+    .office_building {
+        width: 30em; 
+        height: auto; 
+        border-radius: 0px; 
+        margin: 0px; 
+    }
+
+}
+
+/* MEDIA QUERIE - DESKTOP - KONTAKTFORMULÄR */ 
+
+@media screen and (min-width: 810px) {
+
+.contact_form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto; 
+
+
+
+}
+
+} 
+

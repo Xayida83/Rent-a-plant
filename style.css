@@ -290,7 +290,8 @@ ul {
 
 .offert-button {
   width: 17em;
-  background-color: #45462A;
+  background-color: #BC6C25;
+  border: solid #FEFAE0 1px;
   border-radius: 1em;
   margin: 1em;
   text-decoration: none;
@@ -299,38 +300,8 @@ ul {
   padding: 1em;
   font-family: "Poppins";
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  align-self: center;
 }
 .offert-button:hover {
-  background-color: #606C38;
-}
-@media screen and (min-width: 750px) {
-  .offert-button {
-    visibility: hidden;
-  }
-}
-
-.invisible_button {
-  width: 17em;
-  background-color: #45462A;
-  border-radius: 1em;
-  margin: 1em;
-  text-decoration: none;
-  color: #FEFAE0;
-  font-weight: 700;
-  padding: 1em;
-  font-family: "Poppins";
-  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 3em;
-  padding: 0;
-}
-.invisible_button:hover {
   background-color: #606C38;
 }
 
@@ -357,7 +328,7 @@ ul {
   }
 }
 /* OFFERTKNAPP */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .button_wrapper {
     visibility: hidden;
   }
@@ -566,6 +537,7 @@ ul {
 .contact-button {
   width: 17em;
   background-color: #45462A;
+  border: solid #FEFAE0 1px;
   border-radius: 1em;
   margin: 1em;
   text-decoration: none;
@@ -700,19 +672,21 @@ ul {
 .about-us-sign a {
   align-self: center;
 }
-@media screen and (min-width: 750px) {
-  .about-us-sign {
-    padding: 1em 5em;
-    align-items: center;
-  }
-}
 .about-us-sign .catchphrase {
-  margin: 0;
+  margin-bottom: 0;
   font-style: italic;
 }
 .about-us-sign .catchphrase, .about-us-sign em {
   font-weight: 600;
-  font-size: 30px;
+}
+
+.quote_about {
+  text-align: center;
+  background-color: rgba(254, 250, 224, 0.8);
+  max-width: 80%;
+  padding: 2em;
+  border-radius: 20px;
+  color: #45462A;
 }
 
 .about_us_section {
@@ -1039,6 +1013,7 @@ textarea {
 .button_send {
   width: 17em;
   background-color: #BC6C25;
+  border: solid #FEFAE0 1px;
   border-radius: 1em;
   margin: 1em;
   text-decoration: none;

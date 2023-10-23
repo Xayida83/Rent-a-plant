@@ -148,7 +148,8 @@ ul {
 
 /* DESKTOP MEDIA QUERIE */ 
 
-@media screen and (min-width: 810px) {
+//@media screen and (min-width: 810px) 
+@media #{$desktop} {
 
     .packages_wrapper {
         display: flex; 
@@ -174,7 +175,8 @@ ul {
 
 /* OFFERTKNAPP */ 
 
-@media screen and (min-width: 810px) {
+// @media screen and (min-width: 810px) 
+@media #{$desktop} {
     .button_wrapper {
         visibility: hidden;
     }
@@ -193,7 +195,8 @@ ul {
     background-repeat: no-repeat;
     border-radius: 50px;
 
-    @media screen and (min-width: 810px) {
+    // @media screen and (min-width: 810px) 
+    @media #{$desktop} {
         border-radius: 0px;
         height: 100vh; 
     } 

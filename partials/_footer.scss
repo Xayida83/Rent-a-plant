@@ -75,7 +75,8 @@ footer {
     margin-top: 30px; 
     visibility: hidden; 
 
-    @media screen and (min-width: 810px) {
+    @media #{$desktop} {
+        
         visibility: visible;
     
     }
@@ -86,7 +87,7 @@ footer {
     margin-top: 20px;
     visibility: hidden;
 
-    @media screen and (min-width: 810px) {
+    @media #{$desktop} {
         visibility: visible;
     
     }

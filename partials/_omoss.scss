@@ -3,6 +3,9 @@
 
 .background_about_us {
     @include background-picture('/Images/about_us.jpg');
+    @media #{$desktop}{
+        height: 45vh;
+    }
 }
 .about-us-sign {
     @include background-square($highTransparencyBgLight, $primaryColor);

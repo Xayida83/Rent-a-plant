@@ -116,10 +116,19 @@
 
 
 //Ändra logga beroende på skärm
-@mixin switch-background-image($mobile-image, $desktop-image) {
+@mixin switch-logo-image($mobile-image, $desktop-image) {
   background-image: url('#{$mobile-image}'); // Använd mobilbilden som standard
 
-  @media (min-width: 768px) {
+  @media #{$desktop} {
     background-image: url('#{$desktop-image}'); // Använd desktopbilden när skärmbredden är minst 768px
+  }
+}
+
+//Ändra bakgrund beroende på skärm
+@mixin switch-background($mobile-value, $desktop-value) {
+  background: $mobile-value; // Använd mobilvärdet som standard
+
+  @media #{$desktop} {
+    background: $desktop-value; // Använd desktopvärdet när skärmbredden är minst 768px
   }
 }

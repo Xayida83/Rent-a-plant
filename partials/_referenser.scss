@@ -27,7 +27,7 @@
   border-radius: 1.5em;
   width: 18rem;
   height: 16rem;
-  @include switch-background-image($mobileImage, $desktopImage);
+  @include switch-logo-image($mobileImage, $desktopImage);
   background-size: cover;
   @media ($desktop){
     width: 23rem;

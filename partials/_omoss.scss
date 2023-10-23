@@ -1,0 +1,21 @@
+@import "./variables";
+@import"./mixins";
+
+.background_about_us{
+  @include background-picture('Images/about_us.jpg');
+  height: 45vh;
+}
+.about-us-sign {
+  @include background-square($highTransparencyBgLight, $primaryColor);
+  .catchphrase {
+    margin-bottom:0;
+    font-style: italic;    
+  }
+  .catchphrase, em {
+    font-weight: 600;
+  }
+}
+.package_link_card_about_us {
+ @include switch-background($imagebackground, $colorbackground);
+ @include our-packages-link-card(url('/Images/primary_picture.jpg'));
+}

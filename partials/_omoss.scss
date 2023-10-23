@@ -10,23 +10,20 @@
 }
 .about-us-sign {
     @include background-square($highTransparencyBgLight, $primaryColor);
+    @media #{$desktop} {
+        padding: 1em 5em;
+        align-items: center;
+    }
     .catchphrase {
-      margin-bottom:0;
+      margin:0;
       font-style: italic;    
     }
     .catchphrase, em {
       font-weight: 600;
+      font-size: 30px;
     }
   }
 
-.quote_about {
-    text-align: center;
-    background-color: $highTransparencyBgWhite;
-    max-width: 80%;
-    padding: 2em;
-    border-radius: 20px;
-    color: $primaryColor;
-}
 
 
 

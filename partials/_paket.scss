@@ -115,7 +115,19 @@ ul {
     
 }
 .offert-button {
-    @include button($secondaryButtonColor, $primaryButtonBorderColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
+    @include button($primaryButtonColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
+    text-align: center;
+    align-self: center;
+    @media #{$desktop} {
+    visibility: hidden;
+    }  
+}
+.invisible_button {
+    @include button($primaryButtonColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
+    width: 100%;
+    @include center(row);
+    height: 3em;
+    padding: 0;
 }
 
 // .button_wrapper {
@@ -176,13 +188,13 @@ ul {
 /* OFFERTKNAPP */ 
 
 // @media screen and (min-width: 810px) 
-@media #{$desktop} {
-    .button_wrapper {
-        visibility: hidden;
-    }
+// @media #{$desktop} {
+//     .button_wrapper {
+//         visibility: hidden;
+//     }
 
     
-}
+
 
 /* BILD */ 
 

@@ -111,7 +111,7 @@ textarea {
 }
 
 .button_send {
-    @include button ($secondaryButtonColor, $colorWhite, $colorWhite, $buttonText, $colorLightGreen); 
+    @include button ($secondaryButtonColor, $colorWhite, $buttonText, $colorLightGreen); 
     width: 100%; 
 }
 

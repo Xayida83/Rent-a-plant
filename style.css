@@ -300,9 +300,15 @@ ul {
   font-family: "Poppins";
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
+  align-self: center;
 }
 .offert-button:hover {
   background-color: #606C38;
+}
+@media screen and (min-width: 750px) {
+  .offert-button {
+    visibility: hidden;
+  }
 }
 
 .invisible_button {
@@ -351,11 +357,6 @@ ul {
   }
 }
 /* OFFERTKNAPP */
-@media screen and (min-width: 750px) {
-  .button_wrapper {
-    visibility: hidden;
-  }
-}
 /* BILD */
 .img_wrapper {
   display: flex;

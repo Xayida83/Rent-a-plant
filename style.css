@@ -15,16 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .nav-bar {
   width: 100%;
   display: flex;
@@ -193,7 +185,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 30px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_footer {
     visibility: visible;
   }
@@ -204,7 +196,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 20px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .adress_footer {
     visibility: visible;
   }
@@ -318,7 +310,7 @@ ul {
 }
 
 /* DESKTOP MEDIA QUERIE */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .packages_wrapper {
     display: flex;
     flex-direction: row;
@@ -336,7 +328,7 @@ ul {
   }
 }
 /* OFFERTKNAPP */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .button_wrapper {
     visibility: hidden;
   }
@@ -351,7 +343,7 @@ ul {
   background-repeat: no-repeat;
   border-radius: 50px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .img_wrapper {
     border-radius: 0px;
     height: 100vh;
@@ -697,20 +689,20 @@ ul {
   color: #45462A;
 }
 
-.about_us_section, .medarbetare_section {
+.about_us_section {
   background-color: #efdcac;
   padding: 1.5em;
-  text-align: center;
+  width: auto;
 }
-.about_us_section .about_us_content, .about_us_section .medarbetare_content, .medarbetare_section .about_us_content, .medarbetare_section .medarbetare_content {
+.about_us_section .about_us_content {
   color: #45462A;
   max-width: 40em;
   margin: 0 auto;
 }
-.about_us_section .about_us_content h2, .about_us_section .medarbetare_content h2, .medarbetare_section .about_us_content h2, .medarbetare_section .medarbetare_content h2 {
+.about_us_section .about_us_content h2 {
   margin-bottom: 10px;
 }
-.about_us_section h2, .medarbetare_section h2 {
+.about_us_section h2 {
   color: #45462A;
 }
 
@@ -907,7 +899,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 30px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_footer {
     visibility: visible;
   }
@@ -918,7 +910,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 20px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .adress_footer {
     visibility: visible;
   }
@@ -958,7 +950,7 @@ footer .footer_wrapper .logo_footer a {
   background-repeat: no-repeat;
   border-radius: 50px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .image_wrapper {
     width: 60%;
     height: 120vh;
@@ -1036,13 +1028,13 @@ textarea {
   background-color: #606C38;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_us, .contact_info {
     display: none;
   }
 }
 /* MEDIA QUERIE - DEKSTOP - FORMULÄRET */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .bubbles_form_wrapper {
     width: 43em;
     height: 34em;
@@ -1051,7 +1043,7 @@ textarea {
     height: 10em;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_wrapper {
     flex-direction: row;
     background-color: #BC6C25;
@@ -1059,7 +1051,7 @@ textarea {
   }
 }
 /* MEDIA QUERIE DESKTOP - OFFICE BUILDING */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .image_wrapper {
     display: flex;
     justify-content: baseline;
@@ -1074,7 +1066,7 @@ textarea {
   }
 }
 /* MEDIA QUERIE - DESKTOP - KONTAKTFORMULÄR */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_form_wrapper {
     display: flex;
     justify-content: center;
@@ -1108,4 +1100,16 @@ body h1 {
 }
 body h2 {
   font-size: 24px;
+  color: #BC6C25;
+  text-align: center;
+}
+
+h3 {
+  font-family: "DM Serif Display";
+  color: #BC6C25;
+  text-align: center;
+}
+
+p {
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */

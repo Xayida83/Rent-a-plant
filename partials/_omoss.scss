@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./mixins";
 
+
 .background_about_us {
     @include background-picture('/Images/about_us.jpg');
     @media #{$desktop}{
@@ -27,12 +28,16 @@
     color: $primaryColor;
 }
 
-.about_us_section, .medarbetare_section {
+
+
+
+.about_us_section, {
     background-color: #efdcac;
     padding: 1.5em;
-    text-align: center;
+    width: auto;
 
-    .about_us_content, .medarbetare_content {
+
+    .about_us_content, {
         color: $primaryColor;
         max-width: 40em;
         margin: 0 auto;

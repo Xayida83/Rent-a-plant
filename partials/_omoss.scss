@@ -62,6 +62,7 @@
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
+    height:120px; /* */
     background-color:$highTransparencyBgWhite;
     width: 29em;
     color: $primaryColor;
@@ -109,6 +110,10 @@
 
 .read-more-expanded {
     display: block;
+}
+
+.coworker:has(.read-more-expanded) {
+    height:auto;
 }
 
 /* Display the "Read More" content when expanded */

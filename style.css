@@ -672,21 +672,19 @@ ul {
 .about-us-sign a {
   align-self: center;
 }
+@media screen and (min-width: 750px) {
+  .about-us-sign {
+    padding: 1em 5em;
+    align-items: center;
+  }
+}
 .about-us-sign .catchphrase {
-  margin-bottom: 0;
+  margin: 0;
   font-style: italic;
 }
 .about-us-sign .catchphrase, .about-us-sign em {
   font-weight: 600;
-}
-
-.quote_about {
-  text-align: center;
-  background-color: rgba(254, 250, 224, 0.8);
-  max-width: 80%;
-  padding: 2em;
-  border-radius: 20px;
-  color: #45462A;
+  font-size: 30px;
 }
 
 .about_us_section, .medarbetare_section {

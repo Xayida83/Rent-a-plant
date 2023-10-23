@@ -15,6 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -296,25 +298,21 @@ ul {
   text-align: center;
 }
 
-.button_wrapper {
-  display: flex;
-  justify-content: center;
-}
-.button_wrapper .button {
+.offert-button {
+  width: 17em;
   background-color: #BC6C25;
-  border-radius: 20px;
-  border: 1px solid #FEFAE0;
-  text-align: center;
-  padding: 17px;
-  font-family: "Poppins";
+  border: solid #FEFAE0 1px;
+  border-radius: 1em;
+  margin: 1em;
+  text-decoration: none;
   color: #FEFAE0;
-  font-size: 1.25em;
-  font-weight: bold;
-  width: 10em;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Poppins";
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.button {
-  color: #BC6C25;
+.offert-button:hover {
+  background-color: #606C38;
 }
 
 .invisible_button {

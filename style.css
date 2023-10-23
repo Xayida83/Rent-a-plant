@@ -15,6 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -193,7 +195,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 30px;
   visibility: hidden;
 }
-@media (screen and (min-width: 1000px)) {
+@media screen and (min-width: 810px) {
   .contact_footer {
     visibility: visible;
   }
@@ -204,7 +206,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 20px;
   visibility: hidden;
 }
-@media (screen and (min-width: 1000px)) {
+@media screen and (min-width: 810px) {
   .adress_footer {
     visibility: visible;
   }
@@ -798,7 +800,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 30px;
   visibility: hidden;
 }
-@media (screen and (min-width: 1000px)) {
+@media screen and (min-width: 810px) {
   .contact_footer {
     visibility: visible;
   }
@@ -809,7 +811,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 20px;
   visibility: hidden;
 }
-@media (screen and (min-width: 1000px)) {
+@media screen and (min-width: 810px) {
   .adress_footer {
     visibility: visible;
   }
@@ -831,15 +833,30 @@ footer .footer_wrapper .logo_footer a {
   flex-direction: column;
   align-items: center;
 }
-.contact_wrapper .contact_form_wrapper h1 {
+
+.contact_h1 {
+  text-align: center;
   color: #FEFAE0;
+  background-color: #BC6C25;
 }
 
 /* BILD PÅ KONTAKTSIDAN - OFFICE BUILDING */
-img {
-  width: 20em;
-  height: auto;
+.image_wrapper {
+  width: 50%;
+  height: 50vh;
+  margin-top: 1em;
   border-radius: 200px;
+  background-image: url("Images/office_building.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+@media screen and (min-width: 810px) {
+  .image_wrapper {
+    width: 60%;
+    height: 120vh;
+    border-radius: 0px;
+  }
 }
 
 /* KONTAKTINFORMATIONEN I MOBILVYN */
@@ -894,19 +911,37 @@ textarea {
   font-family: "Poppins";
 }
 
+.button_send {
+  width: 17em;
+  background-color: #BC6C25;
+  border: solid #FEFAE0 1px;
+  border-radius: 1em;
+  margin: 1em;
+  text-decoration: none;
+  color: #FEFAE0;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Poppins";
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+.button_send:hover {
+  background-color: #606C38;
+}
+
 @media screen and (min-width: 810px) {
   .contact_us, .contact_info {
-    visibility: hidden;
+    display: none;
   }
 }
 /* MEDIA QUERIE - DEKSTOP - FORMULÄRET */
 @media screen and (min-width: 810px) {
   .bubbles_form_wrapper {
-    width: 70em;
-    height: 45em;
+    width: 43em;
+    height: 34em;
   }
   .bubbles_form_wrapper textarea {
-    height: 20em;
+    height: 10em;
   }
 }
 @media screen and (min-width: 810px) {
@@ -922,9 +957,10 @@ textarea {
     display: flex;
     justify-content: baseline;
     width: 30em;
+    margin: 0px;
   }
   .office_building {
-    width: 30em;
+    width: 35em;
     height: auto;
     border-radius: 0px;
     margin: 0px;
@@ -936,7 +972,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }

@@ -96,10 +96,10 @@
   }
 }
 // Knappar 
-@mixin button($bg-color, $border-color, $text-color, $font-family, $hover-color) {
+@mixin button($bg-color, $text-color, $font-family, $hover-color) {
     width: 17em;
     background-color: $bg-color;
-    border: solid $border-color 1px;
+    // border: solid $border-color 1px;
     border-radius: 1em;
     margin: 1em;
     text-decoration: none;

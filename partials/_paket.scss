@@ -115,7 +115,15 @@ ul {
     
 }
 .offert-button {
-    @include button($secondaryButtonColor, $primaryButtonBorderColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
+    @include button($primaryButtonColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
+    text-align: center;
+}
+.invisible_button {
+    @include button($primaryButtonColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
+    width: 100%;
+    @include center(row);
+    height: 3em;
+    padding: 0;
 }
 
 // .button_wrapper {

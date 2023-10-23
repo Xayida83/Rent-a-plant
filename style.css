@@ -15,16 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .nav-bar {
   width: 100%;
   display: flex;
@@ -193,7 +185,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 30px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_footer {
     visibility: visible;
   }
@@ -204,7 +196,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 20px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .adress_footer {
     visibility: visible;
   }
@@ -298,8 +290,7 @@ ul {
 
 .offert-button {
   width: 17em;
-  background-color: #BC6C25;
-  border: solid #FEFAE0 1px;
+  background-color: #45462A;
   border-radius: 1em;
   margin: 1em;
   text-decoration: none;
@@ -308,8 +299,32 @@ ul {
   padding: 1em;
   font-family: "Poppins";
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 .offert-button:hover {
+  background-color: #606C38;
+}
+
+.invisible_button {
+  width: 17em;
+  background-color: #45462A;
+  border-radius: 1em;
+  margin: 1em;
+  text-decoration: none;
+  color: #FEFAE0;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Poppins";
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 3em;
+  padding: 0;
+}
+.invisible_button:hover {
   background-color: #606C38;
 }
 
@@ -318,7 +333,7 @@ ul {
 }
 
 /* DESKTOP MEDIA QUERIE */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .packages_wrapper {
     display: flex;
     flex-direction: row;
@@ -336,7 +351,7 @@ ul {
   }
 }
 /* OFFERTKNAPP */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .button_wrapper {
     visibility: hidden;
   }
@@ -351,7 +366,7 @@ ul {
   background-repeat: no-repeat;
   border-radius: 50px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .img_wrapper {
     border-radius: 0px;
     height: 100vh;
@@ -545,7 +560,6 @@ ul {
 .contact-button {
   width: 17em;
   background-color: #45462A;
-  border: solid #FEFAE0 1px;
   border-radius: 1em;
   margin: 1em;
   text-decoration: none;
@@ -905,7 +919,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 30px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_footer {
     visibility: visible;
   }
@@ -916,7 +930,7 @@ footer .footer_wrapper .logo_footer a {
   margin-top: 20px;
   visibility: hidden;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .adress_footer {
     visibility: visible;
   }
@@ -956,7 +970,7 @@ footer .footer_wrapper .logo_footer a {
   background-repeat: no-repeat;
   border-radius: 50px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .image_wrapper {
     width: 60%;
     height: 120vh;
@@ -1019,7 +1033,6 @@ textarea {
 .button_send {
   width: 17em;
   background-color: #BC6C25;
-  border: solid #FEFAE0 1px;
   border-radius: 1em;
   margin: 1em;
   text-decoration: none;
@@ -1034,13 +1047,13 @@ textarea {
   background-color: #606C38;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_us, .contact_info {
     display: none;
   }
 }
 /* MEDIA QUERIE - DEKSTOP - FORMULÄRET */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .bubbles_form_wrapper {
     width: 43em;
     height: 34em;
@@ -1049,7 +1062,7 @@ textarea {
     height: 10em;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_wrapper {
     flex-direction: row;
     background-color: #BC6C25;
@@ -1057,7 +1070,7 @@ textarea {
   }
 }
 /* MEDIA QUERIE DESKTOP - OFFICE BUILDING */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .image_wrapper {
     display: flex;
     justify-content: baseline;
@@ -1072,7 +1085,7 @@ textarea {
   }
 }
 /* MEDIA QUERIE - DESKTOP - KONTAKTFORMULÄR */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .contact_form_wrapper {
     display: flex;
     justify-content: center;

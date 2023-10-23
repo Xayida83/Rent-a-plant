@@ -15,16 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .nav-bar {
   width: 100%;
   display: flex;
@@ -392,7 +384,7 @@ ul {
   border-radius: 1.5em;
   color: #FEFAE0;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .welcome_sign {
     max-width: 70%;
   }
@@ -412,7 +404,7 @@ ul {
 .welcome_sign p:last-child {
   display: none;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .welcome_sign p:last-child {
     display: block;
   }
@@ -457,7 +449,7 @@ ul {
   background: url("Images/package_3.jpg");
   background-size: cover;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .package_link_card .img_packages .img_circle {
     width: 15rem;
     height: 15rem;
@@ -492,7 +484,7 @@ ul {
   border-radius: 1.5em;
   color: #45462A;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .why_us_sign {
     max-width: 70%;
   }
@@ -524,22 +516,21 @@ ul {
 }
 
 .logo_picture {
-  background-color: rgba(69, 70, 42, 0.8);
   border-radius: 1.5em;
   width: 18rem;
   height: 16rem;
   background-image: url("Images/light-flower.png");
   background-size: cover;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .logo_picture {
-    background-image: url("Images/light-logo.png");
+    background-image: url("Images/logo2.svg");
   }
 }
-@media (screen and (min-width: 1000px)) {
+@media screen and (min-width: 750px) {
   .logo_picture {
-    width: 23rem;
-    height: 17rem;
+    width: 47rem;
+    height: 19rem;
   }
 }
 
@@ -566,7 +557,7 @@ ul {
   flex-direction: column;
   gap: 2em;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .reference {
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -644,6 +635,11 @@ ul {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 750px) {
+  .background_about_us {
+    height: 45vh;
+  }
+}
 
 .about-us-sign {
   display: flex;
@@ -659,7 +655,7 @@ ul {
   border-radius: 1.5em;
   color: #45462A;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .about-us-sign {
     max-width: 70%;
   }
@@ -797,7 +793,7 @@ ul {
   text-align: center;
   padding: 2em;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .package_link_card_about_us {
     background: #BC6C25;
   }
@@ -834,7 +830,7 @@ ul {
   background: url("Images/package_3.jpg");
   background-size: cover;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .package_link_card_about_us .img_packages .img_circle {
     width: 15rem;
     height: 15rem;

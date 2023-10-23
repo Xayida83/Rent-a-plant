@@ -23,15 +23,15 @@
    }
 }
 .logo_picture {
-  background-color: $highTransparencyBgDark;
+  // background-color: $highTransparencyBgDark;
   border-radius: 1.5em;
   width: 18rem;
   height: 16rem;
   @include switch-logo-image($mobileImage, $desktopImage);
   background-size: cover;
-  @media ($desktop){
-    width: 23rem;
-    height: 17rem;
+  @media #{$desktop}{
+    width: 47rem;
+    height: 19rem;
   }
 }
 .contact-button{

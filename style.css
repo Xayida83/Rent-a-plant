@@ -15,8 +15,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -140,7 +138,7 @@ body {
 }
 footer {
   font-family: "Poppins";
-  font-size: 0.5em;
+  font-size: 0.7em;
   background-color: #45462A;
   color: #FEFAE0;
   height: 100px;
@@ -298,25 +296,21 @@ ul {
   text-align: center;
 }
 
-.button_wrapper {
-  display: flex;
-  justify-content: center;
-}
-.button_wrapper .button {
+.offert-button {
+  width: 17em;
   background-color: #BC6C25;
-  border-radius: 20px;
-  border: 1px solid #FEFAE0;
-  text-align: center;
-  padding: 17px;
-  font-family: "Poppins";
+  border: solid #FEFAE0 1px;
+  border-radius: 1em;
+  margin: 1em;
+  text-decoration: none;
   color: #FEFAE0;
-  font-size: 1.25em;
-  font-weight: bold;
-  width: 10em;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Poppins";
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.button {
-  color: #BC6C25;
+.offert-button:hover {
+  background-color: #606C38;
 }
 
 .invisible_button {
@@ -638,7 +632,7 @@ ul {
 }
 
 .background_about_us {
-  background-image: url("Images/about_us.jpg");
+  background-image: url("/Images/about_us.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -649,7 +643,6 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 45vh;
 }
 
 .about-us-sign {
@@ -689,6 +682,111 @@ ul {
 }
 .about-us-sign .catchphrase, .about-us-sign em {
   font-weight: 600;
+}
+
+.quote_about {
+  text-align: center;
+  background-color: rgba(254, 250, 224, 0.8);
+  max-width: 80%;
+  padding: 2em;
+  border-radius: 20px;
+  color: #45462A;
+}
+
+.about_us_section, .medarbetare_section {
+  background-color: #efdcac;
+  padding: 1.5em;
+  text-align: center;
+}
+.about_us_section .about_us_content, .about_us_section .medarbetare_content, .medarbetare_section .about_us_content, .medarbetare_section .medarbetare_content {
+  color: #45462A;
+  max-width: 40em;
+  margin: 0 auto;
+}
+.about_us_section .about_us_content h2, .about_us_section .medarbetare_content h2, .medarbetare_section .about_us_content h2, .medarbetare_section .medarbetare_content h2 {
+  margin-bottom: 10px;
+}
+.about_us_section h2, .medarbetare_section h2 {
+  color: #45462A;
+}
+
+.coworker-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  max-width: 100%;
+  justify-content: center;
+  background-color: #efdcac;
+}
+
+/* Define the common styles for coworker cards */
+.coworker {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(254, 250, 224, 0.8);
+  width: 29em;
+  color: #45462A;
+}
+
+.coworker-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.coworker-info2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+/* Styles to make the user image circular */
+.coworker img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+/* Styles for the "Read More" content */
+.read-more-content {
+  display: none;
+  padding: 10px;
+  flex-direction: column; /* Make the content stack vertically */
+}
+
+.read-more-expanded {
+  display: block;
+}
+
+/* Display the "Read More" content when expanded */
+.coworker .read-more-icon.rotated + .read-more-content {
+  display: flex;
+}
+
+/* Styles for the "Read More" arrow container */
+.read-more-arrow {
+  width: 20px; /* Set a fixed width for the arrow container */
+}
+
+/* Styles for the "Read More" arrow icon */
+.read-more-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.3s; /* Add a transition for smooth rotation */
+}
+
+/* Styles for the rotated "Read More" arrow */
+.read-more-icon.rotated {
+  transform: rotate(180deg);
 }
 
 .package_link_card_about_us {
@@ -745,7 +843,7 @@ ul {
 
 footer {
   font-family: "Poppins";
-  font-size: 0.5em;
+  font-size: 0.7em;
   background-color: #45462A;
   color: #FEFAE0;
   height: 100px;
@@ -976,6 +1074,12 @@ textarea {
     height: auto;
   }
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Poppins";
   font-size: 1em;

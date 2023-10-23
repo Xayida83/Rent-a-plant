@@ -114,30 +114,33 @@ ul {
     }
     
 }
-
-.button_wrapper {
-    display: flex;
-    justify-content: center;
-
-    .button {
-        background-color: $colorBrown;
-        border-radius: 20px;
-        border: 1px solid $colorWhite;
-        text-align: center;
-        padding: 17px; 
-        font-family: "Poppins";
-        color: $colorWhite; 
-        font-size: 1.25em; 
-        font-weight: bold;
-        width: 10em; 
-    }
+.offert-button {
+    @include button($secondaryButtonColor, $primaryButtonBorderColor, $colorWhite, $buttonText, $primaryButtonHoverColor);
 }
 
-.button {
-    color: $colorBrown;
+// .button_wrapper {
+//     display: flex;
+//     justify-content: center;
+
+//     .button {
+//         background-color: $colorBrown;
+//         border-radius: 20px;
+//         border: 1px solid $colorWhite;
+//         text-align: center;
+//         padding: 17px; 
+//         font-family: "Poppins";
+//         color: $colorWhite; 
+//         font-size: 1.25em; 
+//         font-weight: bold;
+//         width: 10em; 
+//     }
+// }
+
+// .button {
+//     color: $colorBrown;
 
 
-}
+// }
 
 .invisible_button {
     visibility: hidden;

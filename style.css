@@ -15,16 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .nav-bar {
   width: 100%;
   display: flex;
@@ -724,6 +716,7 @@ ul {
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
+  height: 120px; /* */
   background-color: rgba(254, 250, 224, 0.8);
   width: 29em;
   color: #45462A;
@@ -765,6 +758,10 @@ ul {
 
 .read-more-expanded {
   display: block;
+}
+
+.coworker:has(.read-more-expanded) {
+  height: auto;
 }
 
 /* Display the "Read More" content when expanded */

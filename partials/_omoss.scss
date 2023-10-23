@@ -1,0 +1,134 @@
+@import "./variables";
+@import "./mixins";
+
+.background_about {
+    background: url(/Images/about_us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote_about {
+    text-align: center;
+    background-color: $highTransparencyBgWhite;
+    max-width: 80%;
+    padding: 2em;
+    border-radius: 20px;
+    color: $primaryColor;
+}
+
+.about_us_section, .medarbetare_section {
+    background-color: #efdcac;
+    padding: 1.5em;
+    text-align: center;
+
+    .about_us_content, .medarbetare_content {
+        color: $primaryColor;
+        max-width: 40em;
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    h2 {
+        color: $primaryColor; // Move the h2 color declaration to this level
+    }
+
+
+}
+
+.coworker-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 100%;
+    justify-content: center;
+    background-color: #efdcac;
+   
+    
+}
+
+/* Define the common styles for coworker cards */
+.coworker {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color:$highTransparencyBgWhite;
+    width: 29em;
+    color: $primaryColor;
+    
+  
+
+}
+
+
+.coworker-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.coworker-info2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+/* Styles to make the user image circular */
+.coworker img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;  
+    margin-left: 15px;
+
+}
+
+
+
+/* Styles for the "Read More" content */
+.read-more-content {
+    display: none; //Sätt display none
+    padding: 10px;
+    flex-direction: column; /* Make the content stack vertically */
+}
+
+.read-more-expanded {
+    display: block;
+}
+
+/* Display the "Read More" content when expanded */
+.coworker .read-more-icon.rotated + .read-more-content {
+    display: flex;
+}
+
+/* Styles for the "Read More" arrow container */
+.read-more-arrow {
+    width: 20px; /* Set a fixed width for the arrow container */
+}
+
+/* Styles for the "Read More" arrow icon */
+.read-more-icon {
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s; /* Add a transition for smooth rotation */
+}
+
+/* Styles for the rotated "Read More" arrow */
+.read-more-icon.rotated {
+    transform: rotate(180deg);
+}
+

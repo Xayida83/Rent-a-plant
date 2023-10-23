@@ -2,6 +2,20 @@
 @import "partials/navbar";
 @import "partials/paket";
 @import "partials/startsida"; 
+@import "partials/omoss";
 
 
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+ 
+  h1 {
+    text-align: center;
+    color: $colorBrown; 
+    font-family: "DM Serif Display";
+}

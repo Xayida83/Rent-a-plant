@@ -13,6 +13,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -189,17 +191,23 @@ footer .footer_wrapper .logo_footer a {
   text-align: right;
   margin-right: 40px;
   margin-top: 30px;
+  visibility: hidden;
+}
+@media (screen and (min-width: 1000px)) {
+  .contact_footer {
+    visibility: visible;
+  }
 }
 
 .adress_footer {
   margin-left: 40px;
   margin-top: 20px;
+  visibility: hidden;
 }
-
-h1 {
-  text-align: center;
-  color: #BC6C25;
-  font-family: "DM Serif Display";
+@media (screen and (min-width: 1000px)) {
+  .adress_footer {
+    visibility: visible;
+  }
 }
 
 /* BILD LÄNGST UPP PÅ SIDAN UNDER NAVBAR */
@@ -292,17 +300,21 @@ ul {
   display: flex;
   justify-content: center;
 }
-.button_wrapper button {
+.button_wrapper .button {
   background-color: #BC6C25;
   border-radius: 20px;
   border: 1px solid #FEFAE0;
   text-align: center;
-  padding: 10px;
+  padding: 17px;
   font-family: "Poppins";
   color: #FEFAE0;
   font-size: 1.25em;
   font-weight: bold;
   width: 10em;
+}
+
+.button {
+  color: #BC6C25;
 }
 
 .invisible_button {
@@ -337,8 +349,20 @@ ul {
 .img_wrapper {
   display: flex;
   justify-content: center;
+  background-image: url("Images/our_packages_cropped.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
 }
-.img_wrapper .our_packages {
+@media screen and (min-width: 810px) {
+  .img_wrapper {
+    border-radius: 0px;
+    height: 100vh;
+  }
+}
+
+.our_packages {
   max-width: 100%;
   height: auto;
 }
@@ -508,7 +532,7 @@ ul {
     background-image: url("Images/light-logo.png");
   }
 }
-@media screen and (min-width: 1000px) {
+@media (screen and (min-width: 1000px)) {
   .logo_picture {
     width: 23rem;
     height: 17rem;
@@ -658,11 +682,23 @@ footer .footer_wrapper .logo_footer a {
   text-align: right;
   margin-right: 40px;
   margin-top: 30px;
+  visibility: hidden;
+}
+@media (screen and (min-width: 1000px)) {
+  .contact_footer {
+    visibility: visible;
+  }
 }
 
 .adress_footer {
   margin-left: 40px;
   margin-top: 20px;
+  visibility: hidden;
+}
+@media (screen and (min-width: 1000px)) {
+  .adress_footer {
+    visibility: visible;
+  }
 }
 
 .contact_wrapper {
@@ -789,4 +825,26 @@ textarea {
     width: 100%;
     height: auto;
   }
+}
+body {
+  font-family: "Poppins";
+  font-size: 1em;
+  /* display: flex;
+  @include center (column); 
+  &> header {
+      display: block;
+  }
+
+  &> footer {
+      display: block;
+  } */
+}
+body h1 {
+  font-family: "DM Serif Display";
+  font-size: 32px;
+  color: #BC6C25;
+  text-align: center;
+}
+body h2 {
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

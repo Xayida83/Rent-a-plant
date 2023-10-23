@@ -3,9 +3,30 @@
 @import "partials/paket";
 @import "partials/startsida"; 
 @import "partials/referenser";
-
-
 @import "partials/kontakt";
 
+body {
+    font-family: "Poppins";
+    font-size: 1em;
+    /* display: flex;
+    @include center (column); 
+    &> header {
+        display: block;
+    }
 
+    &> footer {
+        display: block;
+    } */ 
+    
+    h1 {
+        font-family: "DM Serif Display";
+        font-size: 32px;
+        color: $colorBrown; 
+        text-align: center;
+    }
 
+    h2 {
+        font-size: 24px;
+
+    }
+}

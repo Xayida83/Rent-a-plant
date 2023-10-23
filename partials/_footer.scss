@@ -39,6 +39,7 @@ footer {
     height: 120px; 
     text-align: left;
     margin-left: 0px; 
+    
 
     p {
         color: $colorLightGreen;
@@ -72,11 +73,21 @@ footer {
     text-align: right;
     margin-right: 40px; 
     margin-top: 30px; 
+    visibility: hidden; 
+
+    @media ($desktop) {
+        visibility: visible;
+    
+    }
 }
 
 .adress_footer {
     margin-left: 40px; 
-    margin-top: 20px; 
+    margin-top: 20px;
+    visibility: hidden;
+
+    @media ($desktop) {
+        visibility: visible; 
+    
+    } 
 }
-
-

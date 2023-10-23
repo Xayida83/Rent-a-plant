@@ -140,7 +140,7 @@ body {
 }
 footer {
   font-family: "Poppins";
-  font-size: 0.5em;
+  font-size: 0.7em;
   background-color: #45462A;
   color: #FEFAE0;
   height: 100px;
@@ -713,250 +713,139 @@ ul {
 }
 .package_link_card_about_us .img_packages .img_circle {
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.background_about {
+  background: url(/Images/about_us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  padding: 1em 0 1em 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-}
-.package_link_card_about_us .img_packages .img_circle#circle_one {
-  background: url("Images/package_1.jpg");
-  background-size: cover;
-}
-.package_link_card_about_us .img_packages .img_circle#circle_two {
-  background: url("Images/package_2.jpg");
-  background-size: cover;
-}
-.package_link_card_about_us .img_packages .img_circle#circle_three {
-  background: url("Images/package_3.jpg");
-  background-size: cover;
-}
-@media screen and (min-width: 1000px) {
-  .package_link_card_about_us .img_packages .img_circle {
-    width: 15rem;
-    height: 15rem;
-  }
+  flex-direction: column;
 }
 
-footer {
-  font-family: "Poppins";
-  font-size: 0.5em;
-  background-color: #45462A;
-  color: #FEFAE0;
-  height: 100px;
-  width: auto;
+.quote_about {
+  text-align: center;
+  background-color: rgba(254, 250, 224, 0.8);
+  max-width: 80%;
+  padding: 2em;
+  border-radius: 20px;
+  color: #45462A;
 }
-footer .footer_wrapper {
+
+.about_us_section, .medarbetare_section {
+  background-color: #efdcac;
+  padding: 1.5em;
+  text-align: center;
+}
+.about_us_section .about_us_content, .about_us_section .medarbetare_content, .medarbetare_section .about_us_content, .medarbetare_section .medarbetare_content {
+  color: #45462A;
+  max-width: 40em;
+  margin: 0 auto;
+}
+.about_us_section .about_us_content h2, .about_us_section .medarbetare_content h2, .medarbetare_section .about_us_content h2, .medarbetare_section .medarbetare_content h2 {
+  margin-bottom: 10px;
+}
+.about_us_section h2, .medarbetare_section h2 {
+  color: #45462A;
+}
+
+.coworker-wrapper {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  max-width: 100%;
+  justify-content: center;
+  background-color: #efdcac;
+}
+
+/* Define the common styles for coworker cards */
+.coworker {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(254, 250, 224, 0.8);
+  width: 29em;
+  color: #45462A;
+}
+
+.coworker-info {
+  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-footer .footer_wrapper .logo_footer {
-  height: 100%;
-  width: auto;
-  text-align: center;
-  display: relative;
-}
-footer .footer_wrapper .logo_footer a {
-  color: #FEFAE0;
-}
-
-/* MENY MED LOGGA OVANFÖR */
-.menu_footer {
-  width: 300px;
-  height: 120px;
-  text-align: left;
-  margin-left: 0px;
-}
-.menu_footer p {
-  color: #606C38;
-  font-weight: 200;
-  display: inline;
-}
-.menu_footer .copyright {
-  margin-left: 40px;
-}
-.menu_footer a {
-  color: #FEFAE0;
-}
-
-/* LOGGA */
-.footer_wrapper .menu_footer .logo_footer {
-  height: 40%;
-  width: auto;
-  margin-left: 30px;
-}
-
-/* TEXTENS AVSTÅND TILL FOOTERN */
-.contact_footer {
-  text-align: right;
-  margin-right: 40px;
-  margin-top: 30px;
-  visibility: hidden;
-}
-@media (screen and (min-width: 1000px)) {
-  .contact_footer {
-    visibility: visible;
-  }
-}
-
-.adress_footer {
-  margin-left: 40px;
-  margin-top: 20px;
-  visibility: hidden;
-}
-@media (screen and (min-width: 1000px)) {
-  .adress_footer {
-    visibility: visible;
-  }
-}
-
-.contact_wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: #BC6C25;
-}
-.contact_wrapper .contact_form_wrapper {
-  background-color: #BC6C25;
-  width: 50em;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
 }
-.contact_wrapper .contact_form_wrapper h1 {
-  color: #FEFAE0;
+
+.coworker-info2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
 }
 
-/* BILD PÅ KONTAKTSIDAN - OFFICE BUILDING */
-img {
-  width: 20em;
-  height: auto;
-  border-radius: 200px;
+/* Styles to make the user image circular */
+.coworker img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-/* KONTAKTINFORMATIONEN I MOBILVYN */
-.contact_us {
+.info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+/* Styles for the "Read More" content */
+.read-more-content {
+  display: none;
+  padding: 10px;
+  flex-direction: column; /* Make the content stack vertically */
+}
+
+.read-more-expanded {
   display: block;
-  font-family: "Poppins";
-  font-weight: lighter;
-  font-size: 0.75em;
-  color: #FEFAE0;
 }
 
-.contact_info {
-  font-family: "Poppins";
-  font-weight: lighter;
-  color: #FEFAE0;
-  font-size: 0.75em;
-}
-
-/* KONTAKTFORMULÄRET */
-.bubbles_form_wrapper {
-  background-color: #EFDCAC;
+/* Display the "Read More" content when expanded */
+.coworker .read-more-icon.rotated + .read-more-content {
   display: flex;
-  flex-direction: column;
-  border-radius: 50px;
-  padding: 3em;
-}
-.bubbles_form_wrapper input {
-  width: 100%;
-  border-radius: 20px;
-  background-color: #FEFAE0;
-  padding: 1.25em;
-  border: none;
-  font-family: "Poppins";
 }
 
-/* KONTAKTANLEDNING - DROPDOWN */
-#contact_reason {
-  width: 100%;
-  border-radius: 20px;
-  background-color: #FEFAE0;
-  padding: 1.25em;
-  border: none;
-  font-family: "Poppins";
+/* Styles for the "Read More" arrow container */
+.read-more-arrow {
+  width: 20px; /* Set a fixed width for the arrow container */
 }
 
-/* FRITEXTFÄLT */
-textarea {
-  border-radius: 20px;
-  background-color: #FEFAE0;
-  padding: 1.25em;
-  border: none;
-  font-family: "Poppins";
+/* Styles for the "Read More" arrow icon */
+.read-more-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.3s; /* Add a transition for smooth rotation */
 }
 
-@media screen and (min-width: 810px) {
-  .contact_us, .contact_info {
-    visibility: hidden;
-  }
+/* Styles for the rotated "Read More" arrow */
+.read-more-icon.rotated {
+  transform: rotate(180deg);
 }
-/* MEDIA QUERIE - DEKSTOP - FORMULÄRET */
-@media screen and (min-width: 810px) {
-  .bubbles_form_wrapper {
-    width: 70em;
-    height: 45em;
-  }
-  .bubbles_form_wrapper textarea {
-    height: 20em;
-  }
-}
-@media screen and (min-width: 810px) {
-  .contact_wrapper {
-    flex-direction: row;
-    background-color: #BC6C25;
-    justify-content: flex-start;
-  }
-}
-/* MEDIA QUERIE DESKTOP - OFFICE BUILDING */
-@media screen and (min-width: 810px) {
-  .image_wrapper {
-    display: flex;
-    justify-content: baseline;
-    width: 30em;
-  }
-  .office_building {
-    width: 30em;
-    height: auto;
-    border-radius: 0px;
-    margin: 0px;
-  }
-}
-/* MEDIA QUERIE - DESKTOP - KONTAKTFORMULÄR */
-@media screen and (min-width: 810px) {
-  .contact_form_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
-}
-body {
-  font-family: "Poppins";
-  font-size: 1em;
-  /* display: flex;
-  @include center (column); 
-  &> header {
-      display: block;
-  }
 
-  &> footer {
-      display: block;
-  } */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-body h1 {
-  font-family: "DM Serif Display";
-  font-size: 32px;
-  color: #BC6C25;
+
+h1 {
   text-align: center;
-}
-body h2 {
-  font-size: 24px;
+  color: #BC6C25;
+  font-family: "DM Serif Display";
 }/*# sourceMappingURL=style.css.map */

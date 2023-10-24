@@ -128,6 +128,10 @@ ul {
     @include center(row);
     height: 3em;
     padding: 0;
+    visibility: hidden;
+    @media#{$desktop} {
+        visibility: visible;
+    }
 }
 
 // .button_wrapper {
@@ -154,9 +158,9 @@ ul {
 
 // }
 
-.invisible_button {
-    visibility: hidden;
-}
+// .invisible_button {
+//     visibility: hidden;
+// }
 
 /* DESKTOP MEDIA QUERIE */ 
 

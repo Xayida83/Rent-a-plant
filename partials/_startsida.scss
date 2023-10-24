@@ -9,6 +9,9 @@
   p:last-child {
     display: none;
   }
+
+
+
   @media #{$desktop}{
     p:last-child {
       display: block;

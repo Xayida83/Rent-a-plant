@@ -2,7 +2,7 @@
 @import"./mixins";
 
 .background_picture {
-  @include background-picture('Images/bg_picture.jpg');
+  @include background-picture('Images/bg_picture.jpg', top);
 }
 
 .why_us_sign {
@@ -30,8 +30,11 @@
   @include switch-logo-image($mobileImage, $desktopImage);
   background-size: cover;
   @media #{$desktop}{
-    width: 47rem;
-    height: 19rem;
+    width: 30rem;
+    height: 13rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
   }
 }
 .contact-button{

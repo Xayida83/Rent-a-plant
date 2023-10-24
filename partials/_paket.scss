@@ -2,28 +2,6 @@
 @import "./footer"; 
 @import "./mixins";
 
-// // h1 {
-//     text-align: center;
-//     color: $colorBrown; 
-//     font-family: "DM Serif Display";
-// // }
-
-/* BILD LÄNGST UPP PÅ SIDAN UNDER NAVBAR */ 
-
-
-.img_wrapper {
-    display: flex;
-    justify-content: center;
-
-    .our_packages {
-        width: 40em; 
-        min-width: 10em; 
-        height: auto; 
-        border-radius: 150px;
-    
-    }
-}
-
 
 /* PAKETEN - MOBILE FIRST */ 
 
@@ -47,6 +25,9 @@
             height: 0.5em;
             border-radius: 50px 50px 0px 0px ;
             padding: 40px; 
+            h2 {
+                color: $colorWhite;
+            }
 
         }
     
@@ -68,18 +49,13 @@
         height: 0.5em;
         border-radius: 50px 50px 0px 0px ;
         padding: 40px; 
+        h2 {
+            color: $colorWhite;
+        }
     }
 
 }
 
-
-    h2 {
-        text-align: center;
-        font-family: "DM Serif Display";
-        color: $colorWhite; 
-        font-size: 1.5em; 
-    
-}
 
 ul {
     font-family: "poppins";

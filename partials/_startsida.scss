@@ -2,7 +2,7 @@
 @import "./mixins";
 
 .background_element {
-  @include background-picture('Images/primary_picture.jpg'); 
+  @include background-picture('Images/primary_picture.jpg', center); 
 }
 .welcome_sign {
   @include background-square($highTransparencyBgDark, $colorWhite);  

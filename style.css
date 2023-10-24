@@ -202,18 +202,6 @@ footer .footer_wrapper .logo_footer a {
   }
 }
 
-/* BILD LÄNGST UPP PÅ SIDAN UNDER NAVBAR */
-.img_wrapper {
-  display: flex;
-  justify-content: center;
-}
-.img_wrapper .our_packages {
-  width: 40em;
-  min-width: 10em;
-  height: auto;
-  border-radius: 150px;
-}
-
 /* PAKETEN - MOBILE FIRST */
 .packages_wrapper {
   display: flex;
@@ -235,6 +223,9 @@ footer .footer_wrapper .logo_footer a {
   border-radius: 50px 50px 0px 0px;
   padding: 40px;
 }
+.packages_wrapper .packages_list .packages_top h2 {
+  color: #FEFAE0;
+}
 
 /* LYXPAKETET */
 .packages_list_lux {
@@ -250,12 +241,8 @@ footer .footer_wrapper .logo_footer a {
   border-radius: 50px 50px 0px 0px;
   padding: 40px;
 }
-
-h2 {
-  text-align: center;
-  font-family: "DM Serif Display";
+.packages_list_lux .packages_top h2 {
   color: #FEFAE0;
-  font-size: 1.5em;
 }
 
 ul {
@@ -386,6 +373,7 @@ ul {
   background-image: url("Images/primary_picture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -449,6 +437,8 @@ ul {
 }
 .package_link_card p {
   margin: 1em 3em;
+  text-align: center;
+  font-size: 1.5em;
 }
 .package_link_card .img_packages {
   display: flex;
@@ -466,14 +456,17 @@ ul {
 .package_link_card .img_packages .img_circle#circle_one {
   background: url("Images/package_1.jpg");
   background-size: cover;
+  background-position: center;
 }
 .package_link_card .img_packages .img_circle#circle_two {
   background: url("Images/package_2.jpg");
   background-size: cover;
+  background-position: left;
 }
 .package_link_card .img_packages .img_circle#circle_three {
   background: url("Images/package_3.jpg");
   background-size: cover;
+  background-position: bottom;
 }
 @media screen and (min-width: 750px) {
   .package_link_card .img_packages .img_circle {
@@ -486,6 +479,7 @@ ul {
   background-image: url("Images/bg_picture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -555,8 +549,11 @@ ul {
 }
 @media screen and (min-width: 750px) {
   .logo_picture {
-    width: 47rem;
-    height: 19rem;
+    width: 30rem;
+    height: 13rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -651,6 +648,7 @@ ul {
   background-image: url("/Images/about_us.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -832,6 +830,8 @@ ul {
 }
 .package_link_card_about_us p {
   margin: 1em 3em;
+  text-align: center;
+  font-size: 1.5em;
 }
 .package_link_card_about_us .img_packages {
   display: flex;
@@ -849,14 +849,17 @@ ul {
 .package_link_card_about_us .img_packages .img_circle#circle_one {
   background: url("Images/package_1.jpg");
   background-size: cover;
+  background-position: center;
 }
 .package_link_card_about_us .img_packages .img_circle#circle_two {
   background: url("Images/package_2.jpg");
   background-size: cover;
+  background-position: left;
 }
 .package_link_card_about_us .img_packages .img_circle#circle_three {
   background: url("Images/package_3.jpg");
   background-size: cover;
+  background-position: bottom;
 }
 @media screen and (min-width: 750px) {
   .package_link_card_about_us .img_packages .img_circle {
@@ -1125,13 +1128,11 @@ body h2 {
   color: #BC6C25;
   text-align: center;
 }
-
-h3 {
+body h3 {
   font-family: "DM Serif Display";
   color: #BC6C25;
   text-align: center;
 }
-
-p {
+body p {
   text-align: left;
 }/*# sourceMappingURL=style.css.map */

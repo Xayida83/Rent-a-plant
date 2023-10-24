@@ -6,10 +6,11 @@
   flex-direction: $direction;
 }
 //Bakgrunds bild
-@mixin background-picture ($picture){
+@mixin background-picture ($picture, $position){
   background-image: url($picture);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: $position;
   width: 100%;
   height: fit-content; 
   padding: 2em 0 2em 0;
@@ -64,6 +65,8 @@
     }
     p {
       margin: 1em 3em;
+      text-align: center;
+      font-size: 1.5em;
     }
   
   .img_packages {
@@ -77,15 +80,18 @@
       @include center(row);
         &#circle_one{
           background:  url('Images/package_1.jpg');
-          background-size: cover;          
+          background-size: cover;  
+          background-position: center;        
         }
         &#circle_two{
           background:  url('Images/package_2.jpg');
           background-size: cover; 
+          background-position: left;
         }
         &#circle_three{
           background:  url('Images/package_3.jpg');
           background-size: cover; 
+          background-position: bottom;
         }
 
       @media #{$desktop} {

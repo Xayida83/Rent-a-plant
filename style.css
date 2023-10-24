@@ -203,18 +203,31 @@ footer .footer_wrapper .logo_footer a {
 }
 
 /* PAKETEN - MOBILE FIRST */
+.package_site_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .packages_wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 3em;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em;
 }
 .packages_wrapper .packages_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #EFDCAC;
   width: 20em;
   height: 12em;
   border-radius: 50px;
-  /* BRUNDEKOR PÅ DIV */
 }
 .packages_wrapper .packages_list .packages_top {
   background-color: #BC6C25;
@@ -229,8 +242,13 @@ footer .footer_wrapper .logo_footer a {
 
 /* LYXPAKETET */
 .packages_list_lux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #D4A373;
-  height: 20em;
+  height: 18em;
   width: 20em;
   border-radius: 50px;
 }
@@ -245,25 +263,17 @@ footer .footer_wrapper .logo_footer a {
   color: #FEFAE0;
 }
 
-ul {
-  font-family: "poppins";
-  color: #45462A;
-}
-
 .lux_package {
   list-style-type: none;
   color: #FEFAE0;
-  text-align: left;
+}
+.lux_package .fa-regular {
+  margin: 0 0.5em 0 0;
 }
 
-/* input[type="checkbox"]::after {
-    accent-color: $primaryColor; 
-    margin-right: 100px; 
-} */
 .star_checkbox {
   display: flex;
-  justify-content: center;
-  margin-left: 30px;
+  justify-content: space-evenly;
   background-color: #FEFAE0;
   border-radius: 30px;
   padding: 10px;
@@ -273,6 +283,29 @@ ul {
 .star_checkbox .checked {
   color: orange;
   text-align: center;
+}
+
+.invisible_button {
+  width: 17em;
+  background-color: #45462A;
+  border-radius: 1em;
+  margin: 1em;
+  text-decoration: none;
+  color: #FEFAE0;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Poppins";
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 3em;
+  padding: 0;
+  display: none;
+}
+.invisible_button:hover {
+  background-color: #606C38;
 }
 
 .offert-button {
@@ -294,36 +327,7 @@ ul {
 }
 @media screen and (min-width: 750px) {
   .offert-button {
-    visibility: hidden;
-  }
-}
-
-.invisible_button {
-  width: 17em;
-  background-color: #45462A;
-  border-radius: 1em;
-  margin: 1em;
-  text-decoration: none;
-  color: #FEFAE0;
-  font-weight: 700;
-  padding: 1em;
-  font-family: "Poppins";
-  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 3em;
-  padding: 0;
-  visibility: hidden;
-}
-.invisible_button:hover {
-  background-color: #606C38;
-}
-@mediascreen and (min-width: 750px) {
-  .invisible_button {
-    visibility: visible;
+    display: none;
   }
 }
 
@@ -341,8 +345,11 @@ ul {
     height: 17em;
     border-radius: 50px;
   }
+  .packages_wrapper .packages_list_lux {
+    height: 22em;
+  }
   .packages_wrapper .invisible_button {
-    visibility: visible;
+    display: flex;
   }
 }
 /* OFFERTKNAPP */
@@ -351,6 +358,7 @@ ul {
   display: flex;
   justify-content: center;
   background-image: url("Images/our_packages_cropped.jpg");
+  width: 100%;
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;

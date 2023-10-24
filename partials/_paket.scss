@@ -95,35 +95,6 @@
     }  
 }
 
-
-// .button_wrapper {
-//     display: flex;
-//     justify-content: center;
-
-//     .button {
-//         background-color: $colorBrown;
-//         border-radius: 20px;
-//         border: 1px solid $colorWhite;
-//         text-align: center;
-//         padding: 17px; 
-//         font-family: "Poppins";
-//         color: $colorWhite; 
-//         font-size: 1.25em; 
-//         font-weight: bold;
-//         width: 10em; 
-//     }
-// }
-
-// .button {
-//     color: $colorBrown;
-
-
-// }
-
-// .invisible_button {
-//     visibility: hidden;
-// }
-
 /* DESKTOP MEDIA QUERIE */ 
 
 //@media screen and (min-width: 810px) 
@@ -149,20 +120,6 @@
         
 }
 }
-
-
-
-/* OFFERTKNAPP */ 
-
-// @media screen and (min-width: 810px) 
-// @media #{$desktop} {
-//     .button_wrapper {
-//         visibility: hidden;
-//     }
-
-    
-
-
 /* BILD */ 
 
 .img_wrapper {
@@ -183,10 +140,3 @@
         height: 100vh; 
     } 
 }
-
-.our_packages {
-    max-width: 100%;  
-    height: auto; 
-} 
-
-/* SKICKA OFFERT-KNAPP I VARJE DIV */

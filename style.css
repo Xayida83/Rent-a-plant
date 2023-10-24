@@ -352,7 +352,6 @@ footer .footer_wrapper .logo_footer a {
     display: flex;
   }
 }
-/* OFFERTKNAPP */
 /* BILD */
 .img_wrapper {
   display: flex;
@@ -375,12 +374,6 @@ footer .footer_wrapper .logo_footer a {
   }
 }
 
-.our_packages {
-  max-width: 100%;
-  height: auto;
-}
-
-/* SKICKA OFFERT-KNAPP I VARJE DIV */
 .background_element {
   background-image: url("Images/primary_picture.jpg");
   background-size: cover;

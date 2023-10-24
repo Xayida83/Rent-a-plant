@@ -185,8 +185,10 @@ ul {
     height: 50vh; 
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 50px;
-
+    // border-radius: 50px;
+    @media #{$desktop} {
+        background-position: center;
+    }
     // @media screen and (min-width: 810px) 
     @media #{$desktop} {
         border-radius: 0px;

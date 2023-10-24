@@ -213,6 +213,7 @@ footer .footer_wrapper .logo_footer a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #FEFAE0;
 }
 
 .packages_wrapper {

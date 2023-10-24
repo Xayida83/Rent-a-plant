@@ -6,6 +6,7 @@
 /* PAKETEN - MOBILE FIRST */ 
 .package_site_wrapper {
     @include center(column);
+    background-color: $primaryBg;
 }
 .packages_wrapper {
     @include center(column);

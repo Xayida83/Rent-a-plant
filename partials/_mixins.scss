@@ -59,6 +59,9 @@
   background-repeat: no-repeat;
   text-align: center;
   padding: 2em;
+    h2 {
+      color: $colorWhite;
+    }
     a {
       text-decoration: none;
       color: $colorWhite;

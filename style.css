@@ -455,6 +455,9 @@ footer .footer_wrapper .logo_footer a {
   text-align: center;
   padding: 2em;
 }
+.package_link_card h2 {
+  color: #FEFAE0;
+}
 .package_link_card a {
   text-decoration: none;
   color: #FEFAE0;
@@ -611,7 +614,7 @@ footer .footer_wrapper .logo_footer a {
   .reference {
     flex-flow: row wrap;
     justify-content: space-evenly;
-    max-width: 106vh;
+    max-width: 143vh;
   }
 }
 .reference .quote-wrapper {
@@ -851,6 +854,9 @@ footer .footer_wrapper .logo_footer a {
   .package_link_card_about_us {
     background: #BC6C25;
   }
+}
+.package_link_card_about_us h2 {
+  color: #FEFAE0;
 }
 .package_link_card_about_us a {
   text-decoration: none;

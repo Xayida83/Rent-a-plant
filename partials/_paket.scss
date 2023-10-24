@@ -100,26 +100,43 @@
 
 //@media screen and (min-width: 810px) 
 @media #{$desktop} {
-.packages_wrapper {
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    gap: 3em; 
-    .packages_list {
-        background-color: $colorLightBeige;
-        width: 20em; 
-        height: 17em; 
-        border-radius: 50px;
-        } 
-    .packages_list_lux {
-        height: 22em;
-    }
-    .invisible_button {
-        // visibility: visible;
-        display: flex;
-    }
+    .package_site_wrapper {
+        background-image: url('/Images/our_packages.jpg');
+        background-position-y: 74em;
+        background-size: cover;
+        height: 77vh;
+        .header_packages_wrapper {
+            background-color: $highTransparencyBgLight;
+            border-radius: 1.5em ;
+        }
         
-}
+        .packages_wrapper {
+            display: flex; 
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 3em;             
+            padding: 2em;
+            border-radius: 1.5em;
+            margin-top: 0;
+            max-width: 100%;
+            .packages_list {
+                background-color: $colorLightBeige;
+                width: 20em; 
+                height: 17em; 
+                border-radius: 50px;
+                } 
+            .packages_list_lux {
+                height: 22em;
+            }
+            .invisible_button {
+                // visibility: visible;
+                display: flex;
+            }
+                
+        }
+    }
+
+   
 }
 /* BILD */ 
 
@@ -137,7 +154,8 @@
     }
     // @media screen and (min-width: 810px) 
     @media #{$desktop} {
-        border-radius: 0px;
-        height: 100vh; 
+        // border-radius: 0px;
+        // height: 100vh; 
+        display: none;
     } 
 }

@@ -16,7 +16,12 @@
   padding: 12px 20px;
 }
 .logo img {width: 230px;}
-.menu {display: flex;}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
 .menu li {padding-left: 30px;}
 .menu li a {
   display: inline-block;

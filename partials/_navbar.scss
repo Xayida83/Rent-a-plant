@@ -4,12 +4,14 @@
 
 
 .nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   list-style: none;
-  position: relative;
   background-color: $primaryColor;
   padding: 12px 20px;
 }
@@ -66,7 +68,14 @@
   right: 20px;
 }
 #check {display: none;}
+
+
 @media(max-width: 810px){
+  
+  .nav-bar {
+    position: fixed; /* Använd position: fixed på mobilen också */
+  }
+  
   .menu {
       flex-direction: column;
       align-items: center;

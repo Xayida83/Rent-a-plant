@@ -324,22 +324,36 @@ footer .footer_wrapper {
 
 /* DESKTOP MEDIA QUERIE */
 @media screen and (min-width: 750px) {
-  .packages_wrapper {
+  .package_site_wrapper {
+    background-image: url("/Images/our_packages.jpg");
+    background-position-y: 74em;
+    background-size: cover;
+    height: 77vh;
+  }
+  .package_site_wrapper .header_packages_wrapper {
+    background-color: rgba(254, 250, 225, 0.8);
+    border-radius: 1.5em;
+  }
+  .package_site_wrapper .packages_wrapper {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 3em;
+    padding: 2em;
+    border-radius: 1.5em;
+    margin-top: 0;
+    max-width: 100%;
   }
-  .packages_wrapper .packages_list {
+  .package_site_wrapper .packages_wrapper .packages_list {
     background-color: #EFDCAC;
     width: 20em;
     height: 17em;
     border-radius: 50px;
   }
-  .packages_wrapper .packages_list_lux {
+  .package_site_wrapper .packages_wrapper .packages_list_lux {
     height: 22em;
   }
-  .packages_wrapper .invisible_button {
+  .package_site_wrapper .packages_wrapper .invisible_button {
     display: flex;
   }
 }
@@ -360,8 +374,7 @@ footer .footer_wrapper {
 }
 @media screen and (min-width: 750px) {
   .img_wrapper {
-    border-radius: 0px;
-    height: 100vh;
+    display: none;
   }
 }
 
@@ -426,6 +439,9 @@ footer .footer_wrapper {
   background-repeat: no-repeat;
   text-align: center;
   padding: 2em;
+}
+.package_link_card h2 {
+  color: #FEFAE0;
 }
 .package_link_card a {
   text-decoration: none;
@@ -583,7 +599,7 @@ footer .footer_wrapper {
   .reference {
     flex-flow: row wrap;
     justify-content: space-evenly;
-    max-width: 106vh;
+    max-width: 143vh;
   }
 }
 .reference .quote-wrapper {
@@ -823,6 +839,9 @@ footer .footer_wrapper {
   .package_link_card_about_us {
     background: #BC6C25;
   }
+}
+.package_link_card_about_us h2 {
+  color: #FEFAE0;
 }
 .package_link_card_about_us a {
   text-decoration: none;

@@ -15,6 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .nav-bar {
   position: fixed;
   top: 0;
@@ -235,6 +237,9 @@ footer {
   height: 12em;
   border-radius: 50px;
 }
+.packages_wrapper .packages_list a {
+  text-decoration: none;
+}
 .packages_wrapper .packages_list .packages_top {
   background-color: #BC6C25;
   width: 20em;
@@ -327,6 +332,7 @@ footer {
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   align-self: center;
+  text-decoration: underline;
 }
 .offert-button:hover {
   background-color: #606C38;
@@ -337,11 +343,15 @@ footer {
   }
 }
 
+.fr {
+  font-size: 0.5em;
+}
+
 /* DESKTOP MEDIA QUERIE */
 @media screen and (min-width: 750px) {
   .package_site_wrapper {
     background-image: url("/Images/our_packages.jpg");
-    background-position-y: 74em;
+    background-position: center;
     background-size: cover;
     height: 77vh;
   }
@@ -365,8 +375,14 @@ footer {
     height: 17em;
     border-radius: 50px;
   }
+  .package_site_wrapper .packages_wrapper .packages_list a {
+    text-decoration: none;
+  }
   .package_site_wrapper .packages_wrapper .packages_list_lux {
     height: 22em;
+  }
+  .package_site_wrapper .packages_wrapper .packages_list_lux a {
+    text-decoration: none;
   }
   .package_site_wrapper .packages_wrapper .invisible_button {
     display: flex;
@@ -998,34 +1014,9 @@ footer {
 .contact_wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   background-color: #BC6C25;
-  padding: 3em 0 0 0;
-}
-.contact_wrapper .image_wrapper {
-  background-image: url("Images/office_building.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 2em 0 2em 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 16em;
-  height: 50vh;
-  border-radius: 1.5em;
-}
-@media screen and (min-width: 750px) {
-  .contact_wrapper .image_wrapper {
-    width: 60%;
-    height: 120vh;
-    border-radius: 0px;
-  }
 }
 .contact_wrapper .contact_form_wrapper {
   background-color: #BC6C25;
@@ -1044,6 +1035,24 @@ footer {
 }
 
 /* BILD PÅ KONTAKTSIDAN - OFFICE BUILDING */
+.image_wrapper {
+  width: 50%;
+  height: 50vh;
+  margin-top: 1em;
+  border-radius: 200px;
+  background-image: url("Images/office_building.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+@media screen and (min-width: 750px) {
+  .image_wrapper {
+    width: 60%;
+    height: 120vh;
+    border-radius: 0px;
+  }
+}
+
 /* KONTAKTINFORMATIONEN I MOBILVYN */
 .contact_us {
   display: block;
@@ -1186,7 +1195,7 @@ body h1 {
 }
 body h2 {
   font-family: "DM Serif Display";
-  font-size: 2em;
+  font-size: 1.8em;
   color: #BC6C25;
   text-align: center;
 }

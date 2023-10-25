@@ -525,9 +525,23 @@ footer {
     height: 15rem;
   }
 }
+.package_link_card .package_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.package_link_card .package_name div {
+  min-width: 5em;
+}
+@media screen and (min-width: 750px) {
+  .package_link_card .package_name div {
+    min-width: 9em;
+    font-size: 2em;
+  }
+}
 
 .background_picture {
-  background-image: url("Images/bg_picture.jpg");
+  background-image: url("Images/office-jungle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -939,6 +953,20 @@ footer {
     height: 15rem;
   }
 }
+.package_link_card_about_us .package_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.package_link_card_about_us .package_name div {
+  min-width: 5em;
+}
+@media screen and (min-width: 750px) {
+  .package_link_card_about_us .package_name div {
+    min-width: 9em;
+    font-size: 2em;
+  }
+}
 
 .contact_wrapper {
   display: flex;
@@ -1102,7 +1130,7 @@ footer {
   width: 85%;
 }
 .contact_wrapper .contact_form_wrapper .button_send:hover {
-  background-color: #606C38;
+  background-color: #e2a96d;
 }
 
 * {

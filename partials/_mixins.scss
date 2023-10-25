@@ -97,12 +97,24 @@
           background:  url('Images/package_3.jpg');
           background-size: cover; 
           background-position: bottom;
-        }
+        }       
 
       @media #{$desktop} {
         width: 15rem;
         height: 15rem;
       }     
+    }
+  }
+  .package_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    div {
+      min-width: 5em;
+      @media #{$desktop}{
+        min-width: 9em;
+        font-size: $fontSizeLinkCardDesktop;
+      }
     }
   }
 }

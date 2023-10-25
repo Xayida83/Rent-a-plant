@@ -135,79 +135,80 @@
   }
 }
 footer {
-  font-family: "Poppins";
-  font-size: 0.7em;
+  font-size: 0.85em;
   background-color: #45462A;
   color: #FEFAE0;
-  height: 100px;
+  height: 120px;
   width: auto;
-}
-footer .footer_wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-footer .footer_wrapper .logo_footer {
-  height: 100%;
-  width: auto;
-  text-align: center;
-  display: relative;
-}
-footer .footer_wrapper .logo_footer a {
-  color: #FEFAE0;
+  /* Bakgrundsfärg, textfärg och andra fotoinställningar */
 }
 
 /* MENY MED LOGGA OVANFÖR */
-.menu_footer {
-  width: 300px;
-  height: 120px;
-  text-align: left;
-  margin-left: 0px;
+.logo-menu-copyright {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Centrera texten inuti div */
 }
+
+.copyright {
+  color: #606C38;
+  /* Färgsättning för upphovsrätten */
+}
+
 .menu_footer p {
   color: #606C38;
-  font-weight: 200;
+  font-weight: 600;
   display: inline;
-}
-.menu_footer .copyright {
-  margin-left: 40px;
 }
 .menu_footer a {
   color: #FEFAE0;
+  /* Färgsättning för menyn och länkar */
 }
 
-/* LOGGA */
-.footer_wrapper .menu_footer .logo_footer {
-  height: 40%;
-  width: auto;
-  margin-left: 30px;
+.logo-menu-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Centrera logotyp och copyright-text i mitten */
 }
 
-/* TEXTENS AVSTÅND TILL FOOTERN */
-.contact_footer {
-  text-align: right;
-  margin-right: 40px;
-  margin-top: 30px;
-  visibility: hidden;
+/* För att göra logotypen mindre, använd transform-egenskapen */
+.logo_footer {
+  height: 60px; /* Justera höjden enligt dina preferenser */
+  width: auto; /* Automatisk bredd för att behålla proportionerna */
 }
-@media screen and (min-width: 750px) {
-  .contact_footer {
-    visibility: visible;
+
+/* Specifika stilar för skrivbordsskärmar (skärmar över 810px) */
+@media (min-width: 811px) {
+  .footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 40px; /* Ditt värde för vänstermarginal på skrivbord */
+    margin-right: 40px; /* Ditt värde för högermarginal på skrivbord */
   }
 }
-
-.adress_footer {
-  margin-left: 40px;
-  margin-top: 20px;
-  visibility: hidden;
-}
-@media screen and (min-width: 750px) {
-  .adress_footer {
-    visibility: visible;
+/* Återställ stilar för mindre skärmar (skärmar upp till 810px) */
+@media (max-width: 810px) {
+  .footer_wrapper {
+    /* Återställ stilar till deras standardvärden för mindre skärmar */
+    display: initial; /* Återställ till standardvärde */
+    flex-direction: initial; /* Återställ till standardvärde */
+    justify-content: initial; /* Återställ till standardvärde */
+    align-items: initial; /* Återställ till standardvärde */
+    margin-left: initial; /* Återställ till standardvärde */
+    margin-right: initial; /* Återställ till standardvärde */
   }
 }
-
+@media (max-width: 810px) {
+  .adress_footer, .contact_footer {
+    display: none;
+    /* Göm adress- och kontaktinformationen */
+  }
+}
 /* PAKETEN - MOBILE FIRST */
 .package_site_wrapper {
   display: flex;
@@ -744,12 +745,15 @@ footer .footer_wrapper .logo_footer a {
 
 .about_us_section {
   background-color: #efdcac;
-  padding: 1.5em;
-  width: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2em;
 }
 .about_us_section .about_us_content {
   color: #45462A;
-  max-width: 40em;
+  max-width: 49em;
   margin: 0 auto;
 }
 .about_us_section .about_us_content h2 {
@@ -759,13 +763,18 @@ footer .footer_wrapper .logo_footer a {
   color: #45462A;
 }
 
+.varderingar {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 .coworker-wrapper {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  max-width: 100%;
   justify-content: center;
   background-color: #efdcac;
+  max-width: 49em;
 }
 
 /* Define the common styles for coworker cards */
@@ -775,7 +784,7 @@ footer .footer_wrapper .logo_footer a {
   margin: 10px;
   height: 120px; /* */
   background-color: rgba(254, 250, 224, 0.8);
-  width: 29em;
+  width: 23em;
   color: #45462A;
 }
 
@@ -790,6 +799,12 @@ footer .footer_wrapper .logo_footer a {
   display: flex;
   justify-content: space-between;
   margin-left: 10px;
+}
+
+/* Gör e-postadressen mindre och fet */
+.info p:last-child {
+  font-weight: bold;
+  font-size: 14px; /* Justera storleken efter dina preferenser */
 }
 
 /* Styles to make the user image circular */
@@ -908,79 +923,80 @@ footer .footer_wrapper .logo_footer a {
 }
 
 footer {
-  font-family: "Poppins";
-  font-size: 0.7em;
+  font-size: 0.85em;
   background-color: #45462A;
   color: #FEFAE0;
-  height: 100px;
+  height: 120px;
   width: auto;
-}
-footer .footer_wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-footer .footer_wrapper .logo_footer {
-  height: 100%;
-  width: auto;
-  text-align: center;
-  display: relative;
-}
-footer .footer_wrapper .logo_footer a {
-  color: #FEFAE0;
+  /* Bakgrundsfärg, textfärg och andra fotoinställningar */
 }
 
 /* MENY MED LOGGA OVANFÖR */
-.menu_footer {
-  width: 300px;
-  height: 120px;
-  text-align: left;
-  margin-left: 0px;
+.logo-menu-copyright {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Centrera texten inuti div */
 }
+
+.copyright {
+  color: #606C38;
+  /* Färgsättning för upphovsrätten */
+}
+
 .menu_footer p {
   color: #606C38;
-  font-weight: 200;
+  font-weight: 600;
   display: inline;
-}
-.menu_footer .copyright {
-  margin-left: 40px;
 }
 .menu_footer a {
   color: #FEFAE0;
+  /* Färgsättning för menyn och länkar */
 }
 
-/* LOGGA */
-.footer_wrapper .menu_footer .logo_footer {
-  height: 40%;
-  width: auto;
-  margin-left: 30px;
+.logo-menu-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Centrera logotyp och copyright-text i mitten */
 }
 
-/* TEXTENS AVSTÅND TILL FOOTERN */
-.contact_footer {
-  text-align: right;
-  margin-right: 40px;
-  margin-top: 30px;
-  visibility: hidden;
+/* För att göra logotypen mindre, använd transform-egenskapen */
+.logo_footer {
+  height: 60px; /* Justera höjden enligt dina preferenser */
+  width: auto; /* Automatisk bredd för att behålla proportionerna */
 }
-@media screen and (min-width: 750px) {
-  .contact_footer {
-    visibility: visible;
+
+/* Specifika stilar för skrivbordsskärmar (skärmar över 810px) */
+@media (min-width: 811px) {
+  .footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 40px; /* Ditt värde för vänstermarginal på skrivbord */
+    margin-right: 40px; /* Ditt värde för högermarginal på skrivbord */
   }
 }
-
-.adress_footer {
-  margin-left: 40px;
-  margin-top: 20px;
-  visibility: hidden;
-}
-@media screen and (min-width: 750px) {
-  .adress_footer {
-    visibility: visible;
+/* Återställ stilar för mindre skärmar (skärmar upp till 810px) */
+@media (max-width: 810px) {
+  .footer_wrapper {
+    /* Återställ stilar till deras standardvärden för mindre skärmar */
+    display: initial; /* Återställ till standardvärde */
+    flex-direction: initial; /* Återställ till standardvärde */
+    justify-content: initial; /* Återställ till standardvärde */
+    align-items: initial; /* Återställ till standardvärde */
+    margin-left: initial; /* Återställ till standardvärde */
+    margin-right: initial; /* Återställ till standardvärde */
   }
 }
-
+@media (max-width: 810px) {
+  .adress_footer, .contact_footer {
+    display: none;
+    /* Göm adress- och kontaktinformationen */
+  }
+}
 .contact_wrapper {
   display: flex;
   justify-content: center;
@@ -1159,17 +1175,19 @@ body {
 }
 body h1 {
   font-family: "DM Serif Display";
-  font-size: 32px;
+  font-size: 2.6em;
   color: #BC6C25;
   text-align: center;
 }
 body h2 {
-  font-size: 24px;
+  font-family: "DM Serif Display";
+  font-size: 2em;
   color: #BC6C25;
   text-align: center;
 }
 body h3 {
   font-family: "DM Serif Display";
+  font-size: 1.6em;
   color: #BC6C25;
   text-align: center;
 }

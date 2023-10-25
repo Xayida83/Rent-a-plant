@@ -1,94 +1,87 @@
 @import "./variables"; 
 
-
 footer {
-    font-family: "Poppins";
-    font-size: 0.7em;
+    font-size: 0.85em;
     background-color: $primaryColor; 
     color: $colorWhite; 
-    height: 100px; 
-    width: auto; 
-    
-    .footer_wrapper {
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap; 
-
-        .logo_footer {
-            height: 100%;
-            width: auto; 
-            text-align: center;
-            display: relative;  
-
-                a {
-                color: $colorWhite; 
-                
-
-            }
-        }
-    }
-    
+    height: 120px; 
+    width: auto;
+    /* Bakgrundsfärg, textfärg och andra fotoinställningar */
 }
-
 
 /* MENY MED LOGGA OVANFÖR */ 
 
-.menu_footer {
-    width: 300px; 
-    height: 120px; 
-    text-align: left;
-    margin-left: 0px; 
-    
+.logo-menu-copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Centrera texten inuti div */
+}
 
+.copyright {
+    color: $colorLightGreen;
+    /* Färgsättning för upphovsrätten */
+}
+
+.menu_footer {
     p {
         color: $colorLightGreen;
-        font-weight: 200; 
+        font-weight: 600; 
         display: inline; 
     }
-
-    .copyright {
-        margin-left: 40px; 
-    }
-
     a {
         color: $colorWhite; 
-        
-    
+        /* Färgsättning för menyn och länkar */
     }
 }
 
-/* LOGGA */ 
 
-.footer_wrapper .menu_footer .logo_footer {
-    height: 40%; 
-    width: auto; 
-    margin-left: 30px; 
+  
+    .logo-menu-copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* Centrera logotyp och copyright-text i mitten */
+
+    }
+
+    /* För att göra logotypen mindre, använd transform-egenskapen */
+.logo_footer {
+    height: 60px; /* Justera höjden enligt dina preferenser */
+    width: auto;  /* Automatisk bredd för att behålla proportionerna */
 }
 
-
-/* TEXTENS AVSTÅND TILL FOOTERN */ 
-
-.contact_footer {
-    text-align: right;
-    margin-right: 40px; 
-    margin-top: 30px; 
-    visibility: hidden; 
-
-    @media #{$desktop} {
-        
-        visibility: visible;
-    
+/* Specifika stilar för skrivbordsskärmar (skärmar över 810px) */
+@media (min-width: 811px) {
+    .footer_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-left: 40px; /* Ditt värde för vänstermarginal på skrivbord */
+        margin-right: 40px; /* Ditt värde för högermarginal på skrivbord */
     }
 }
 
-.adress_footer {
-    margin-left: 40px; 
-    margin-top: 20px;
-    visibility: hidden;
 
-    @media #{$desktop} {
-        visibility: visible;
-    
+
+/* Återställ stilar för mindre skärmar (skärmar upp till 810px) */
+@media (max-width: 810px) {
+    .footer_wrapper {
+        /* Återställ stilar till deras standardvärden för mindre skärmar */
+        display: initial; /* Återställ till standardvärde */
+        flex-direction: initial; /* Återställ till standardvärde */
+        justify-content: initial; /* Återställ till standardvärde */
+        align-items: initial; /* Återställ till standardvärde */
+        margin-left: initial; /* Återställ till standardvärde */
+        margin-right: initial; /* Återställ till standardvärde */
+    }
+}
+
+@media (max-width: 810px) {
+    .adress_footer, .contact_footer {
+        display: none;
+        /* Göm adress- och kontaktinformationen */
     }
 }

@@ -527,7 +527,7 @@ footer {
 }
 
 .background_picture {
-  background-image: url("Images/office-jungle.jpg");
+  background-image: url("Images/bg_picture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

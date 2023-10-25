@@ -15,8 +15,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .nav-bar {
   position: fixed;
   top: 0;
@@ -351,7 +349,6 @@ footer {
 @media screen and (min-width: 750px) {
   .package_site_wrapper {
     background-image: url("/Images/our_packages.jpg");
-    background-position: center;
     background-position: center;
     background-size: cover;
     height: 77vh;
@@ -693,10 +690,10 @@ footer {
 }
 
 .background_about_us {
-  background-image: url("/Images/bg_office.jpg");
+  background-image: url("Images/primary_picture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;

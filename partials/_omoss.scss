@@ -3,7 +3,7 @@
 
 
 .background_about_us {
-    @include background-picture('/Images/bg_office.jpg', bottom);
+    @include background-picture($about-us-bg-picture, center);
     @media #{$desktop}{
         height: 45vh;
     }

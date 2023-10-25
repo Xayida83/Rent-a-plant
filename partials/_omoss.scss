@@ -26,17 +26,21 @@
 
 
 
-
-
 .about_us_section, {
     background-color: #efdcac;
-    padding: 1.5em;
-    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2em;
+    
+
+    
 
 
     .about_us_content, {
         color: $primaryColor;
-        max-width: 40em;
+        max-width: 49em;
         margin: 0 auto;
 
         h2 {
@@ -45,21 +49,28 @@
     }
 
     h2 {
-        color: $primaryColor; // Move the h2 color declaration to this level
+        color: $primaryColor; 
     }
 
 
 }
 
+.varderingar {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+
 .coworker-wrapper {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    max-width: 100%;
     justify-content: center;
     background-color: #efdcac;
+    max-width: 49em;
    
-    
+
 }
 
 /* Define the common styles for coworker cards */
@@ -69,7 +80,7 @@
     margin: 10px;
     height:120px; /* */
     background-color:$highTransparencyBgWhite;
-    width: 29em;
+    width: 23em;
     color: $primaryColor;
     
   
@@ -88,6 +99,13 @@
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
+}
+
+
+/* Gör e-postadressen mindre och fet */
+.info p:last-child {
+    font-weight: bold;
+    font-size: 14px; /* Justera storleken efter dina preferenser */
 }
 
 /* Styles to make the user image circular */
@@ -147,3 +165,5 @@
     @include switch-background($imagebackground, $colorbackground);
     @include our-packages-link-card(url('/Images/primary_picture.jpg'));
 }
+
+

@@ -394,7 +394,7 @@ footer {
 }
 
 .background_element {
-  background-image: url("Images/primary_picture.jpg");
+  background-image: url("Images/2248.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -412,7 +412,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(69, 70, 42, 0.8);
+  background-color: rgba(254, 250, 224, 0.8);
   max-width: -moz-fit-content;
   max-width: fit-content;
   max-height: -moz-fit-content;
@@ -420,7 +420,7 @@ footer {
   padding: 1em;
   margin: 1em;
   border-radius: 1.5em;
-  color: #FEFAE0;
+  color: #45462A;
 }
 @media screen and (min-width: 750px) {
   .welcome_sign {
@@ -429,7 +429,7 @@ footer {
 }
 .welcome_sign h1 {
   margin: 1em 0;
-  color: #FEFAE0;
+  color: #45462A;
 }
 .welcome_sign p {
   text-align: left;
@@ -507,7 +507,7 @@ footer {
 }
 
 .background_picture {
-  background-image: url("Images/bg_picture.jpg");
+  background-image: url("Images/office-jungle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -676,7 +676,7 @@ footer {
 }
 
 .background_about_us {
-  background-image: url("/Images/about_us.jpg");
+  background-image: url("/Images/bg_office.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;

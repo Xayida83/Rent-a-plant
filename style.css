@@ -541,7 +541,7 @@ footer {
 }
 
 .background_picture {
-  background-image: url("Images/office-jungle.jpg");
+  background-image: url("Images/bg-monstera.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -710,7 +710,7 @@ footer {
 }
 
 .background_about_us {
-  background-image: url("Images/primary_picture.jpg");
+  background-image: url("Images/bg-orangeroses.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -341,7 +341,7 @@ footer {
 @media screen and (min-width: 750px) {
   .package_site_wrapper {
     background-image: url("/Images/our_packages.jpg");
-    background-position-y: 74em;
+    background-position: center;
     background-size: cover;
     height: 77vh;
   }
@@ -614,7 +614,7 @@ footer {
   .reference {
     flex-flow: row wrap;
     justify-content: space-evenly;
-    max-width: 143vh;
+    max-width: 73em;
   }
 }
 .reference .quote-wrapper {
@@ -920,88 +920,19 @@ footer {
   }
 }
 
-footer {
-  font-size: 0.85em;
-  background-color: #45462A;
-  color: #FEFAE0;
-  height: 120px;
-  width: auto;
-  /* Bakgrundsfärg, textfärg och andra fotoinställningar */
-}
-
-/* MENY MED LOGGA OVANFÖR */
-.logo-menu-copyright {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center; /* Centrera texten inuti div */
-}
-
-.copyright {
-  color: #606C38;
-  /* Färgsättning för upphovsrätten */
-}
-
-.menu_footer p {
-  color: #606C38;
-  font-weight: 600;
-  display: inline;
-}
-.menu_footer a {
-  color: #FEFAE0;
-  /* Färgsättning för menyn och länkar */
-}
-
-.logo-menu-copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  /* Centrera logotyp och copyright-text i mitten */
-}
-
-/* För att göra logotypen mindre, använd transform-egenskapen */
-.logo_footer {
-  height: 60px; /* Justera höjden enligt dina preferenser */
-  width: auto; /* Automatisk bredd för att behålla proportionerna */
-}
-
-/* Specifika stilar för skrivbordsskärmar (skärmar över 810px) */
-@media (min-width: 811px) {
-  .footer_wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: 40px; /* Ditt värde för vänstermarginal på skrivbord */
-    margin-right: 40px; /* Ditt värde för högermarginal på skrivbord */
-  }
-}
-/* Återställ stilar för mindre skärmar (skärmar upp till 810px) */
-@media (max-width: 810px) {
-  .footer_wrapper {
-    /* Återställ stilar till deras standardvärden för mindre skärmar */
-    display: initial; /* Återställ till standardvärde */
-    flex-direction: initial; /* Återställ till standardvärde */
-    justify-content: initial; /* Återställ till standardvärde */
-    align-items: initial; /* Återställ till standardvärde */
-    margin-left: initial; /* Återställ till standardvärde */
-    margin-right: initial; /* Återställ till standardvärde */
-  }
-}
-@media (max-width: 810px) {
-  .adress_footer, .contact_footer {
-    display: none;
-    /* Göm adress- och kontaktinformationen */
-  }
-}
 .contact_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #BC6C25;
-  padding: 3em 0 0 0;
+}
+@media screen and (min-width: 750px) {
+  .contact_wrapper {
+    flex-direction: row;
+  }
+}
+.contact_wrapper h2 {
+  color: #FEFAE0;
 }
 .contact_wrapper .image_wrapper {
   background-image: url("Images/office_building.jpg");
@@ -1016,87 +947,128 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 16em;
-  height: 50vh;
-  border-radius: 1.5em;
 }
 @media screen and (min-width: 750px) {
   .contact_wrapper .image_wrapper {
-    width: 60%;
-    height: 120vh;
-    border-radius: 0px;
+    width: 47em;
+    height: 100vh;
   }
 }
-.contact_wrapper .contact_form_wrapper {
-  background-color: #BC6C25;
-  width: 50em;
-  height: 100%;
+.contact_wrapper .image_wrapper .contact_us_sign {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(69, 70, 42, 0.8);
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1.5em;
+  color: #FEFAE0;
+  margin: 3em;
+}
+@media screen and (min-width: 750px) {
+  .contact_wrapper .image_wrapper .contact_us_sign {
+    max-width: 70%;
+  }
+}
+.contact_wrapper .image_wrapper .contact_us_sign h1 {
+  margin: 1em 0;
+  color: #FEFAE0;
+}
+.contact_wrapper .image_wrapper .contact_us_sign p {
+  text-align: left;
+  line-height: 2em;
+  margin: 0.5em 1em;
+}
+.contact_wrapper .image_wrapper .contact_us_sign a {
+  align-self: center;
+}
+@media screen and (min-width: 750px) {
+  .contact_wrapper .image_wrapper .contact_us_sign {
+    min-width: 65%;
+    min-height: 30%;
+    justify-content: center;
+  }
+}
+.contact_wrapper .image_wrapper .contact_us_sign .contact_us {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  font-style: normal;
 }
-
-.contact_h1 {
-  text-align: center;
+.contact_wrapper .image_wrapper .contact_us_sign .contact_us p {
+  line-height: 0.5em;
+}
+.contact_wrapper .image_wrapper .contact_us_sign .contact_us p:nth-child(3) {
+  margin-bottom: 0.5em;
+}
+.contact_wrapper .image_wrapper .contact_us_sign .contact_us .special_a {
   color: #FEFAE0;
+  font-size: 12px;
+}
+.contact_wrapper .image_wrapper .contact_us_sign .contact_us .special_a a {
+  text-decoration: none;
+  color: #FEFAE0;
+}
+.contact_wrapper .contact_form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #BC6C25;
 }
-
-/* BILD PÅ KONTAKTSIDAN - OFFICE BUILDING */
-/* KONTAKTINFORMATIONEN I MOBILVYN */
-.contact_us {
-  display: block;
-  font-family: "Poppins";
-  font-weight: lighter;
-  font-size: 0.75em;
+@media screen and (min-width: 750px) {
+  .contact_wrapper .contact_form_wrapper {
+    height: 100vh;
+  }
+}
+.contact_wrapper .contact_form_wrapper h2 {
   color: #FEFAE0;
 }
-
-.contact_info {
-  font-family: "Poppins";
-  font-weight: lighter;
-  color: #FEFAE0;
-  font-size: 0.75em;
-}
-
-/* KONTAKTFORMULÄRET */
-.bubbles_form_wrapper {
-  background-color: #EFDCAC;
+.contact_wrapper .contact_form_wrapper .bubbles_form_wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  border-radius: 50px;
-  padding: 3em;
+  background-color: #EFDCAC;
+  border-radius: 1.5em;
+  max-width: 95%;
+  margin: 1em;
 }
-.bubbles_form_wrapper input {
-  width: 100%;
-  border-radius: 20px;
+@media screen and (min-width: 750px) {
+  .contact_wrapper .contact_form_wrapper .bubbles_form_wrapper {
+    width: 80%;
+  }
+}
+.contact_wrapper .contact_form_wrapper .bubbles_form_wrapper h1 {
+  margin-top: 1em;
+  color: #BC6C25;
+}
+.contact_wrapper .contact_form_wrapper .bubbles_form_wrapper form {
+  text-align: center;
+}
+.contact_wrapper .contact_form_wrapper .bubbles_form_wrapper form input {
+  border-radius: 1.5em;
   background-color: #FEFAE0;
+  margin: 1em;
   padding: 1.25em;
   border: none;
-  font-family: "Poppins";
+  width: 85%;
 }
-
-/* KONTAKTANLEDNING - DROPDOWN */
-#contact_reason {
-  width: 100%;
-  border-radius: 20px;
+.contact_wrapper .contact_form_wrapper .bubbles_form_wrapper form #contact_reason, .contact_wrapper .contact_form_wrapper .bubbles_form_wrapper form #meddelande {
+  border-radius: 1.5em;
   background-color: #FEFAE0;
+  color: #4c4d4e;
+  margin: 1em;
   padding: 1.25em;
   border: none;
-  font-family: "Poppins";
+  width: 85%;
 }
-
-/* FRITEXTFÄLT */
-textarea {
-  border-radius: 20px;
-  background-color: #FEFAE0;
-  padding: 1.25em;
-  border: none;
-  font-family: "Poppins";
-}
-
-.button_send {
+.contact_wrapper .contact_form_wrapper .button_send {
   width: 17em;
   background-color: #BC6C25;
   border-radius: 1em;
@@ -1107,57 +1079,12 @@ textarea {
   padding: 1em;
   font-family: "Poppins";
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 100%;
+  width: 85%;
 }
-.button_send:hover {
+.contact_wrapper .contact_form_wrapper .button_send:hover {
   background-color: #606C38;
 }
 
-@media screen and (min-width: 750px) {
-  .contact_us, .contact_info {
-    display: none;
-  }
-}
-/* MEDIA QUERIE - DEKSTOP - FORMULÄRET */
-@media screen and (min-width: 750px) {
-  .bubbles_form_wrapper {
-    width: 43em;
-    height: 34em;
-  }
-  .bubbles_form_wrapper textarea {
-    height: 10em;
-  }
-}
-@media screen and (min-width: 750px) {
-  .contact_wrapper {
-    flex-direction: row;
-    background-color: #BC6C25;
-    justify-content: space-evenly;
-  }
-}
-/* MEDIA QUERIE DESKTOP - OFFICE BUILDING */
-@media screen and (min-width: 750px) {
-  .image_wrapper {
-    display: flex;
-    justify-content: baseline;
-    width: 30em;
-    margin: 0px;
-  }
-  .office_building {
-    width: 35em;
-    height: auto;
-    border-radius: 0px;
-    margin: 0px;
-  }
-}
-/* MEDIA QUERIE - DESKTOP - KONTAKTFORMULÄR */
-@media screen and (min-width: 750px) {
-  .contact_form_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 * {
   box-sizing: border-box;
   margin: 0;

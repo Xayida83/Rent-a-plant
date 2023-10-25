@@ -101,7 +101,7 @@
 @media #{$desktop} {
     .package_site_wrapper {
         background-image: url('/Images/our_packages.jpg');
-        background-position-y: 74em;
+        background-position: center;
         background-size: cover;
         height: 77vh;
         .header_packages_wrapper {

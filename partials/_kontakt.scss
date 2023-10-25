@@ -92,7 +92,7 @@
             }
         }
         .button_send {
-            @include button ($secondaryButtonColor, $colorWhite, $buttonText, $colorLightGreen);
+            @include button ($secondaryButtonColor, $colorWhite, $buttonText, $secondaryButtonHoverColor);
             width: 85%;
         }
     }

@@ -1,110 +1,178 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
       src="https://kit.fontawesome.com/28fc0eb946.js"
       crossorigin="anonymous"
     ></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Rent-a-Plant Kontakta oss</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Rent-a-Plant Kontakta oss</title>
+  </head>
 
-<body>
-  <header>
-    <!-- Navbar Section -->
-    <nav>
-      <div class='nav-bar'>
-          <div class='logo'><a href='/Index.html'><img src='Images/logo2.svg' alt='Rent-a-Plant Logo'>
-          </a></div>
-          <input type='checkbox' id='check' />
-          <ul class="menu">
-              <li><a href="/Index.html">Hem</a></li>
-              <li><a href="/paket.html">Våra Paket</a></li>
-              <li><a href="/omoss.html">Om Oss</a></li>
-              <li><a href="/referenser.html">Referenser</a></li>
-              <li><a href="/kontakt.html">Kontakt</a></li>
-             <li> <label for="check" class="close-menu"><i class="fas fa-times"></i></label></li>
-          </ul>
-          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-        </div>
-    </nav>
-  </header>
-
-
-    <!-- Kontaktformulär -->
-    <div class="contact_wrapper">
-        <div class="image_wrapper">
-          <div class="contact_us_sign">
-            <h2>Kontakt</h2>
-
-            <address class="contact_us">
-              <p>Rent-a-Plant</p>
-              <p>Vasagatan 10</p>
-              <p>112 32 Stockholm</p>   
-              <p class="special_a">Telefonnummer: <a href="tel:08-700-00-00">08 - 700 00 00</a></p>
-              <p class="special_a">E-post: <a href="mailto:info@rent-a-plant.com">info@rent-a-plant.com</a></p>             
-            </address>
+  <body>
+    <header>
+      <!-- Navbar Section -->
+      <nav>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="/Index.html"
+              ><img
+                src="Images/logo2.svg"
+                alt="Rent-a-Plant Logo"
+              />
+            </a>
           </div>
+          <input type="checkbox" id="check" />
+          <ul class="menu">
+            <li><a href="/Index.html">Hem</a></li>
+            <li>
+              <a href="/paket.html">Våra Paket</a>
+            </li>
+            <li>
+              <a href="/omoss.html">Om Oss</a>
+            </li>
+            <li>
+              <a href="/referenser.html"
+                >Referenser</a
+              >
+            </li>
+            <li>
+              <a href="/kontakt.html">Kontakt</a>
+            </li>
+            <li>
+              <label
+                for="check"
+                class="close-menu"
+                ><i class="fas fa-times"></i
+              ></label>
+            </li>
+          </ul>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
         </div>
-        <!-- Brunt kontaktformulär -->
-        <div class="contact_form_wrapper">
-            
-           
+      </nav>
+    </header>
+    <main class="contact_wrapper">
+      <div class="image_wrapper">
+        <div class="contact_us_sign">
+          <h2>Kontakt</h2>
 
-            <div class="bubbles_form_wrapper">
-              <h1>Kontaktformulär</h1>   
-              <form>        
-                 <input type="text" name="Namn" id="firstname" placeholder="Namn"> 
-                <input type="text" name="E-post" id="e-mail" placeholder="E-post"> 
-                <select name="Anledning till kontakt" id="contact_reason">
-                  <option> Anledning till kontakt </option>
-                  <option value="Service">Köp av tjänst</option>
-                  <option value="questions"> Frågor om Rent-a-Plant </option>
-                  <option value="website"> Synpunkter på hemsidan </option>
-                </select>
-                <textarea name="fritext" id="meddelande" cols="45" rows="5" placeholder="Fritext..."></textarea>
-                  <button class="button_send">SKICKA</button>
-              </form>
-            </div>  
+          <address class="contact_us">
+            <p>Rent-a-Plant</p>
+            <p>Vasagatan 10</p>
+            <p>112 32 Stockholm</p>
+            <p class="special_a">
+              Telefonnummer:
+              <a href="tel:08-700-00-00">
+                08 - 700 00 00</a>
+            </p>
+            <p class="special_a">
+              E-post:
+              <ahref="mailto:info@rent-a-plant.com">
+                info@rent-a-plant.com
+              </a>
+            </p>
+          </address>
         </div>
-
-    </div>
+      </div>
+      <div class="contact_form_wrapper">
+        <div class="bubbles_form_wrapper">
+          <h1>Kontaktformulär</h1>
+          <form>
+            <input
+              type="text"
+              name="Namn"
+              id="firstname"
+              placeholder="Namn"
+            />
+            <input
+              type="text"
+              name="E-post"
+              id="e-mail"
+              placeholder="E-post"
+            />
+            <select
+              name="Anledning till kontakt"
+              id="contact_reason"
+            >
+              <option>
+                Anledning till kontakt
+              </option>
+              <option value="Service">
+                Köp av tjänst
+              </option>
+              <option value="questions">
+                Frågor om Rent-a-Plant
+              </option>
+              <option value="website">
+                Synpunkter på hemsidan
+              </option>
+            </select>
+            <textarea
+              name="fritext"
+              id="meddelande"
+              cols="45"
+              rows="5"
+              placeholder="Fritext..."
+            >
+            </textarea>
+            <button class="button_send">
+              SKICKA
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="footer_wrapper">
         <div class="adress_footer">
           <p>
             <strong>Rent-a-Plant</strong>
-            <br>
+            <br />
             Vasagatan 10
-            <br>
+            <br />
             112 32 Stockholm
           </p>
-          <br>
+          <br />
         </div>
-    
+
         <div class="logo-menu-copyright">
-          <img src="Images/logo2.svg" alt="Rent-a-Plant" class="logo_footer"><a href="/Index.html"></a>
+          <img
+            src="Images/logo2.svg"
+            alt="Rent-a-Plant"
+            class="logo_footer"
+          /><a href="/Index.html"></a>
           <div class="menu_footer">
-            <a href="/paket.html">Våra paket</a><p>|</p>
-            <a href="/omoss.html">Om oss</a><p>|</p>
-            <a href="/referenser.html">Referenser</a><p>|</p>
+            <a href="/paket.html">Våra paket</a>
+            <p>|</p>
+            <a href="/omoss.html">Om oss</a>
+            <p>|</p>
+            <a href="/referenser.html"
+              >Referenser</a
+            >
+            <p>|</p>
             <a href="/kontakt.html">Kontakt</a>
-      
           </div>
-          <p class="copyright">© Rent-a-Plant 2023</p>
+          <p class="copyright">
+            © Rent-a-Plant 2023
+          </p>
         </div>
-    
+
         <div class="contact_footer">
           <p>
             08 - 700 00 00
-            <br>
-       info@rent-a-plant.com
+            <br />
+            info@rent-a-plant.com
           </p>
-          <br>
+          <br />
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

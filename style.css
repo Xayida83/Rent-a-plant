@@ -15,8 +15,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .nav-bar {
   position: fixed;
   top: 0;
@@ -1000,9 +998,34 @@ footer {
 .contact_wrapper {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   background-color: #BC6C25;
+  padding: 3em 0 0 0;
+}
+.contact_wrapper .image_wrapper {
+  background-image: url("Images/office_building.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2em 0 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 16em;
+  height: 50vh;
+  border-radius: 1.5em;
+}
+@media screen and (min-width: 750px) {
+  .contact_wrapper .image_wrapper {
+    width: 60%;
+    height: 120vh;
+    border-radius: 0px;
+  }
 }
 .contact_wrapper .contact_form_wrapper {
   background-color: #BC6C25;
@@ -1021,24 +1044,6 @@ footer {
 }
 
 /* BILD PÅ KONTAKTSIDAN - OFFICE BUILDING */
-.image_wrapper {
-  width: 50%;
-  height: 50vh;
-  margin-top: 1em;
-  border-radius: 200px;
-  background-image: url("Images/office_building.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50px;
-}
-@media screen and (min-width: 750px) {
-  .image_wrapper {
-    width: 60%;
-    height: 120vh;
-    border-radius: 0px;
-  }
-}
-
 /* KONTAKTINFORMATIONEN I MOBILVYN */
 .contact_us {
   display: block;

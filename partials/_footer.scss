@@ -3,7 +3,7 @@
 footer {
     font-size: 0.85em;
     background-color: $primaryColor; 
-    color: $colorWhite; 
+    color: $footerTextPrimaryColor; 
     height: 120px; 
     width: auto;
     /* Bakgrundsfärg, textfärg och andra fotoinställningar */
@@ -19,18 +19,18 @@ footer {
 }
 
 .copyright {
-    color: $colorLightGreen;
+    color: $footerTextColor;
     /* Färgsättning för upphovsrätten */
 }
 
 .menu_footer {
     p {
-        color: $colorLightGreen;
+        color: $footerTextColor;
         font-weight: 600; 
         display: inline; 
     }
     a {
-        color: $colorWhite; 
+        color: $footerTextPrimaryColor; 
         /* Färgsättning för menyn och länkar */
     }
 }

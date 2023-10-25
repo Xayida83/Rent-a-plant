@@ -15,7 +15,7 @@
     .packages_list {
         @include center(column);
         justify-content: space-between;
-        background-color: $colorLightBeige;
+        background-color: $thirdBg;
         width: 20em; 
         height: 12em; 
         border-radius: 50px;
@@ -25,7 +25,7 @@
         }
 
         .packages_top {
-            background-color: $colorBrown;
+            background-color: $secondaryBg;
             width: 20em; 
             height: 0.5em;
             border-radius: 50px 50px 0px 0px ;
@@ -43,13 +43,13 @@
 .packages_list_lux {
     @include center(column);
     justify-content: space-between;
-    background-color: $colorBeige;
+    background-color: $fourthBg;
     height: 18em; 
     width: 20em; 
     border-radius: 50px;
    
     .packages_top {
-        background-color: $colorBrown;
+        background-color: $secondaryBg;
         width: 20em; 
         height: 0.5em;
         border-radius: 50px 50px 0px 0px ;
@@ -76,7 +76,7 @@
     border-radius: 30px;
     padding: 10px; 
     width: 10em; 
-    box-shadow: 2px 2px 2px $colorBrown;
+    box-shadow: 2px 2px 2px $secondaryBg;
     .checked {
         color: orange; 
         text-align: center; 
@@ -131,7 +131,7 @@
 
 
             .packages_list {
-                background-color: $colorLightBeige;
+                background-color: $thirdBg;
                 width: 20em; 
                 height: 17em; 
                 border-radius: 50px;
@@ -158,19 +158,12 @@
     }
 }
 
-
-
-
 /* BILD */ 
 
 .img_wrapper {
-    display: flex;
-    justify-content: center; 
-    background-image: url('Images/our_packages_cropped.jpg'); 
-    width: 100%;
+    @include background-picture($our-packages-bg-picture, center);
     height: 50vh; 
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     @media #{$desktop} {
         background-position: center;
     }

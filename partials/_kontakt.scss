@@ -12,7 +12,7 @@
     }
 
     .image_wrapper {
-        @include background-picture('Images/office_building.jpg', center);
+        @include background-picture($contact-us-bg-picture, center);
         @media #{$desktop} {
             width: 47em;
             height: 100vh;
@@ -54,7 +54,7 @@
             height: 100vh;
         }
         h2 {
-            color: $headerText;            
+            color: $seconderyHeadingColor;            
         }
         
         .bubbles_form_wrapper {

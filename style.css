@@ -388,13 +388,19 @@ footer {
 }
 /* BILD */
 .img_wrapper {
-  display: flex;
-  justify-content: center;
   background-image: url("Images/our_packages_cropped.jpg");
-  width: 100%;
-  height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2em 0 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
 }
 @media screen and (min-width: 750px) {
   .img_wrapper {
@@ -524,7 +530,7 @@ footer {
   background-image: url("Images/office-jungle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;

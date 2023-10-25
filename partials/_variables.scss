@@ -1,25 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
-
-
 //Rubriker - storlek
 $headingText: 62px; 
+$headingColor: #BC6C25;
+$seconderyHeadingColor: #FEFAE0;
 
 // Brödtext - storlek
 $bodyText: 32px; 
-
 
 // Loggor
 $mobileImage: "Images/light-flower.png";
 $desktopImage: "Images/logo2.svg";
 
-//Våra paket bakgrund
+//Våra paket kort bakgrund
 $colorbackground: #BC6C25;
 $imagebackground: "Images/primary_picture.jpg";
-
-
-//-------- FÄRGVARIABLER --------------
 
 // Färger - primära
 $primaryColor: #45462A; 
@@ -29,12 +25,18 @@ $colorWhite: #FEFAE0;
 // Bakgrund
 $primaryBg: #FEFAE0; 
 $secondaryBg: #BC6C25; 
+$thirdBg:#EFDCAC;
+$fourthBg: #D4A373;
 $highTransparencyBgDark: rgba(69, 70, 42, 0.8);
 $highTransparencyBgWhite: rgba(254, 250, 224, 0.8);
 $highTransparencyBgLight: rgba(254, 250, 225, 0.8);
 $contactFormBg: #EFDCAC; 
+//Bakgrundsbilder
 $about-us-bg-picture: "Images/primary_picture.jpg";
-
+$contact-us-bg-picture: "Images/office_building.jpg";
+$our-packages-bg-picture: "Images/our_packages_cropped.jpg";
+$references-bg-picture: "Images/office-jungle.jpg";
+$home-bg-picture: "Images/2248.jpg";
 
 // Knappar 
 $primaryButtonColor: #45462A;
@@ -44,21 +46,10 @@ $secondaryButtonColor: #BC6C25;
 $secondaryButtonHoverColor:#e2a96d;
 $buttonText: "Poppins";
 
-// Färger - sekundära
-$colorBrown: #BC6C25; 
-$colorLightBeige: #EFDCAC; 
-$colorBeige: #D4A373; 
-
-// Färger - accent (används i t.ex. footern)
-$colorLightGreen: #606C38; 
-
 // Footer
 $footerColor: #45462A;
-$footerText: #FEFAE0; 
-
-// Header
-$headerColor: #45462A;
-$headerText:  #FEFAE0; 
+$footerTextPrimaryColor:#FEFAE0;
+$footerTextColor: #606C38; 
 
 // Media query
 $desktop: "screen and (min-width: 750px)";

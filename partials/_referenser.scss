@@ -2,7 +2,7 @@
 @import"./mixins";
 
 .background_picture {
-  @include background-picture('Images/office-jungle.jpg', top);
+  @include background-picture($references-bg-picture, center);
 }
 
 .why_us_sign {

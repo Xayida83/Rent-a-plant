@@ -43,6 +43,7 @@
   }
   & a {
     align-self: center;
+    text-decoration: none;
   }
 }
 
@@ -134,6 +135,7 @@
     &:hover {
       background-color: $hover-color;
     }
+   
 }
 
 

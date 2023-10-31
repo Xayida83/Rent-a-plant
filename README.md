@@ -1,6 +1,8 @@
 # Rent-a-plant
 Company Website Project
+
 Project Overview
+
 This project, completed as part of a course on HTML, CSS, and Accessibility, entailed the creation of a website for a fictional company. 
 The company's mission was to sell a product or service of our choosing. Our goal was to design a responsive and accessible website that not only showcases the company's offerings 
 but also provides information about the company's history, its employees, customer reviews, and contact details.
